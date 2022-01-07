@@ -9,6 +9,7 @@ const productSchema = new Schema(
         color: {type: String, required: true},
         frets: {type: Number, required: true},
         image: {type: String, required: true},
+        price: {type: Number, required: true},
     }
 )
 

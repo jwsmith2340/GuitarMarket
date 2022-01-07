@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 
@@ -20,11 +21,12 @@
                 <% products.forEach(pro=> { %>
                     <div class="home-product-display">
                         <div class="product-display-image">
-                            <img src="<%= pro.image %>" class="display-image">
+                            <a class="home-image-a" href="/<%= pro._id %>"><img src="<%= pro.image %>" class="display-image"></a>
                         </div>
                         <div class="product-display-info">
-                            <p><%= pro.brand %> <%= pro.model %><br>
-                            Color: <%= pro.color %><br>
+                            <p><a class="home-name-a" href="/<%= pro._id %>"><%= pro.brand %> <%= pro.model %></a><br>
+                            <%= pro.color %><br>
+                            $<%= pro.price %>.99<br>
                             </p>
                         </div>
 
@@ -32,6 +34,14 @@
                     <% }) %>
             </ul>
     </div>
+    
+    <footer>
+        <a href="www.google.com" target="_blank">Contact Us</a>
+        <span style="font-size: 2.2em; color: silver;">
+        <i class="fa fa-github"></i>
+        <i class="fa fa-linkedin-square"></i>
+        </span>
+    </footer>
 
 </body>
 

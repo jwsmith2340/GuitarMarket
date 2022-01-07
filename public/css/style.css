@@ -67,7 +67,7 @@ ul {
     margin: 7px 0;
     border-top: 1.7px black solid;
     border-bottom: 1px black solid;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .product-display-image {
@@ -79,8 +79,33 @@ ul {
     width: 60%;
     margin-right: 15px;
     padding: 10px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .display-image {
     height: 130px;
+}
+
+.home-image-a {
+
+}
+
+.home-name-a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    height: 50px;
+    background-color: blue;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
 }
