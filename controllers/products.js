@@ -30,6 +30,11 @@ productsRouter.get('/admin/new', (req, res) => {
 })
 
 //delete
+productsRouter.delete('/:id', (req, res) => {
+    Product.findByIdAndDelete(req.params.id, (err, deletedProduct) => {
+        res.redirect('/')
+    })
+})
 
 //update
 productsRouter.put('/:id', (req, res) => {

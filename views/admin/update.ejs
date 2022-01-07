@@ -14,7 +14,7 @@
             </div>
             <a href="/admin/new">Add Item</a>
     </div>
-    
+
     <form action="/<%= product._id %>?_method=PUT" method="post">
         Brand: <input type="text" name="brand" value="<%= product.brand %>"><br>
         Model: <input type="text" name="model" value="<%= product.model %>"><br>
@@ -22,6 +22,10 @@
         Frets: <input type="number" name="frets" value="<%= product.frets %>"><br>
         Image Url: <input type="text" name="image" value="<%= product.image %>"><br>
         <input type="submit" value="Add New Product">
+    </form>
+
+    <form action="/<%= product._id %>?_method=DELETE" method="post">
+        <input type="submit" value="Delete Product">
     </form>
 
 </body>
