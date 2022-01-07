@@ -1,23 +1,33 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 img {
     height: 150px;
 }
 
+#nav-background {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 10%;
+    background-color: silver;
+    border: 0;
+    position: fixed;
+    top: 0;
+}
+
 .navbar {
     border: 0;
     overflow: hidden;
-    position: fixed;
-    top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10%;
+    height: 80%;
     background-color: black;
-    margin-bottom: 20px;
 }
 
 .navbar a {
@@ -25,11 +35,21 @@ img {
     display: block;
     color: whitesmoke;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 13px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .main {
-    margin-top: 130px;
+    margin-top: 90px;
 }
+
+#category-box {
+    background: silver;
+    padding: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
