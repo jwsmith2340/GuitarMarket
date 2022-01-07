@@ -30,14 +30,35 @@ productsRouter.get('/admin/new', (req, res) => {
 })
 
 //delete
+
 //update
+productsRouter.put('/:id', (req, res) => {
+    Product.findByIdAndUpdate(
+        req.params.id,
+        req.body, 
+        { new: true },
+        (error, updatedProduct) => {
+            res.redirect(`/${req.params.id}`)
+        }
+        )
+})
+
 //create
 productsRouter.post('/', (req, res) => {
     Product.create(req.body, (err, newProduct) => {
         res.redirect('/')
     })
 })
+
 //edit
+productsRouter.get('/admin/:id/edit', (req, res) => {
+    Product.findById(req.params.id, (err, foundProduct) => {
+        res.render('admin/update.ejs', {
+            product: foundProduct
+        })
+    })
+})
+
 //show
 productsRouter.get('/:id', (req, res) => {
     Product.findById(req.params.id, (err, foundProduct) => {

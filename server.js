@@ -5,6 +5,7 @@ const productsController = require('./controllers/products')
 const usersController = require('./controllers/users')
 const morgan = require('morgan')
 const expressSession = require('express-session')
+const methodOverride = require('method-override')
 
 require('dotenv').config()
 
@@ -32,7 +33,7 @@ app.use(expressSession({
     saveUninitialized: false
 }))
 app.use(express.static('public'))
-
+app.use(methodOverride('_method'))
 app.use(function(req, res, next) {
     console.log('Session Store:', req.session)
     next()
