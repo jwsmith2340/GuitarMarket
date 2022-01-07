@@ -53,3 +53,34 @@ img {
     align-items: center;
 }
 
+ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-product-display {
+    height: 150px;
+    display: flex;
+    width: 90%;
+    margin: 7px 0;
+    border-top: 1.7px black solid;
+    border-bottom: 1px black solid;
+    justify-content: space-between;
+}
+
+.product-display-image {
+    margin-left: 15px;
+    padding: 10px 0;
+}
+
+.product-display-info {
+    width: 60%;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.display-image {
+    height: 130px;
+}

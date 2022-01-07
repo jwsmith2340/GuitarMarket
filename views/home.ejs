@@ -13,14 +13,22 @@
 <body>
     <div class="main">
         <%- include('../partials/nav.ejs') %>
-        <div id="category-box">
-            <h3>All Guitars</h3>
-        </div>
+            <div id="category-box">
+                <h3>All Guitars</h3>
+            </div>
             <ul>
                 <% products.forEach(pro=> { %>
-                    <li><a href="/<%= pro._id %>">
-                            <%= pro.brand %>
-                        </a></li>
+                    <div class="home-product-display">
+                        <div class="product-display-image">
+                            <img src="<%= pro.image %>" class="display-image">
+                        </div>
+                        <div class="product-display-info">
+                            <p><%= pro.brand %> <%= pro.model %><br>
+                            Color: <%= pro.color %><br>
+                            </p>
+                        </div>
+
+                    </div>
                     <% }) %>
             </ul>
     </div>
