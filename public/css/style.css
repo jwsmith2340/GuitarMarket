@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 img {
@@ -132,13 +133,15 @@ footer {
 
 .nav-logo {
     color: white;
+    font-family: 'Vujahday Script', cursive;
+    font-size: 26px;
 }
 
 .nav-logo-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .logo-img {
