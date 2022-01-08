@@ -2,6 +2,10 @@ const express = require('express')
 const productsRouter = express.Router()
 const Product = require('../models/product')
 
+require('dotenv').config()
+
+const { ADMINSECRET } = process.env
+
 //Seed Route - Delete Later
 const productSeed = require('../models/productSeed')
 productsRouter.get('/products/seed', (req, res) => {
@@ -18,14 +22,14 @@ productsRouter.get('/products/seed', (req, res) => {
 //index
 productsRouter.get('/', (req, res) => {
     Product.find({}, (error, allProducts) => {
-        res.render('index.ejs', {
+        res.render('home.ejs', {
             products: allProducts
         })
     })
 })
 
 //new
-productsRouter.get('/admin/new', (req, res) => {
+productsRouter.get(`/${ADMINSECRET}/new`, (req, res) => {
     res.render('admin/new.ejs')
 })
 
@@ -56,7 +60,7 @@ productsRouter.post('/', (req, res) => {
 })
 
 //edit
-productsRouter.get('/admin/:id/edit', (req, res) => {
+productsRouter.get(`/${ADMINSECRET}/:id/edit`, (req, res) => {
     Product.findById(req.params.id, (err, foundProduct) => {
         res.render('admin/update.ejs', {
             product: foundProduct

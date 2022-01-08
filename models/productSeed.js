@@ -62,5 +62,14 @@ module.exports = [
         price: 1149,
         category: 'guitar',
         subC1: 'electric',
-    }
+    }, 
+    {
+        brand: 'Fender',
+        model: 'Deluxe Active Precision Special PF', 
+        color: 'Olympic White',
+        image: 'https://c1.zzounds.com/media/productmedia/fit,2018by3200/quality,85/1_Full_Straight_Front_NA-d1a559c21305e194e7e8541f1f52343a.jpg',
+        price: 999,
+        category: 'bass',
+        subC1: 'electric'
+    },
 ]
