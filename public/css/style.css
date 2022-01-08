@@ -1,3 +1,5 @@
+/* MOBILE AND GENERAL SETTINGS */
+
 * {
     margin: 0;
     padding: 0;
@@ -263,4 +265,19 @@ fieldset > input:focus{
 
 .new_form {
     margin-top: 15px;
+}
+
+/* TABLET OPTIMIZATION */
+@media only screen and (min-width: 768px){
+
+#category-box {
+    margin-top: 120px;
+}
+
+.home-product-display {
+    justify-content: space-evenly;
+}
+
+
+
 }

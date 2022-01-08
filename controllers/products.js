@@ -18,7 +18,7 @@ productsRouter.get('/products/seed', (req, res) => {
 //index
 productsRouter.get('/', (req, res) => {
     Product.find({}, (error, allProducts) => {
-        res.render('home.ejs', {
+        res.render('index.ejs', {
             products: allProducts
         })
     })
