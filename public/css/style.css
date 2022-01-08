@@ -100,7 +100,7 @@ ul {
 
 footer {
     height: 50px;
-    background-color: blue;
+    background-color: black;
     width: 100%;
     bottom: 0;
     position: relative;
@@ -108,4 +108,45 @@ footer {
     margin-bottom: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.footer-a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-box {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 0;
+}
+
+#copyright {
+    color: white;
+   
+}
+
+.nav-logo {
+    color: white;
+}
+
+.nav-logo-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    height: 20px;
+    
+}
+
+#logo-img-div {
+   display: flex;
+   flex-direction: row;
 }
