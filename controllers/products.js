@@ -28,6 +28,22 @@ productsRouter.get('/', (req, res) => {
     })
 })
 
+productsRouter.get('/guitar', (req, res) => {
+    Product.find({"category": "guitar"}, (error, allProducts) => {
+        res.render('home.ejs', {
+            products: allProducts
+        })
+    })
+})
+
+productsRouter.get('/bass', (req, res) => {
+    Product.find({"category": "bass"}, (error, allProducts) => {
+        res.render('home.ejs', {
+            products: allProducts
+        })
+    })
+})
+
 //new
 productsRouter.get(`/${ADMINSECRET}/new`, (req, res) => {
     res.render('admin/new.ejs')
@@ -71,8 +87,9 @@ productsRouter.get(`/${ADMINSECRET}/:id/edit`, (req, res) => {
 //show
 productsRouter.get('/:id', (req, res) => {
     Product.findById(req.params.id, (err, foundProduct) => {
+        console.log(foundProduct)
         res.render('show.ejs', {
-            product: foundProduct
+            product: foundProduct    
         })
     })
 })

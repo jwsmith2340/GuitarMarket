@@ -41,8 +41,11 @@ app.use(function(req, res, next) {
 //^^custom middleware that lets us log the session to the console
 
 //Controller route
-app.use('/', productsController)
+app.use('/product_category', productsController)
 app.use('/users', usersController)
+app.get('/', (req, res) => {
+    res.render('index.ejs')
+})
 
 //Express listener
 app.listen(PORT, () => console.log(`Listening on ${PORT}`))

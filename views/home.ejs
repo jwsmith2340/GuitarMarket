@@ -6,18 +6,20 @@
     <body>
         <div class="main">
             <%- include('../partials/nav.ejs') %>
+
                 <div id="category-box">
-                    <h3>All Guitars</h3>
+                    <h5 id="category-box-h5">Products: <%= products.length %></h5>
                 </div>
+
                 <ul>
                     <% products.forEach(pro=> { %>
                         <div class="home-product-display">
                             <div class="product-display-image">
-                                <a class="home-image-a" href="/<%= pro._id %>"><img src="<%= pro.image %>"
+                                <a class="home-image-a" href="/product_category/<%= pro._id %>"><img src="<%= pro.image %>"
                                         class="display-image"></a>
                             </div>
                             <div class="product-display-info">
-                                <p><a class="home-name-a" href="/<%= pro._id %>">
+                                <p><a class="home-name-a" href="/product_category/<%= pro._id %>">
                                         <%= pro.brand %>
                                             <%= pro.model %>
                                     </a><br>

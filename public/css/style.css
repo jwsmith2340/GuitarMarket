@@ -16,7 +16,7 @@ img {
     display: flex;
     align-items: center;
     height: 10%;
-    background-color: silver;
+    background-color: #EAAA00;
     border: 0;
     position: fixed;
     top: 0;
@@ -30,7 +30,7 @@ img {
     justify-content: space-between;
     align-items: center;
     height: 80%;
-    background-color: black;
+    background-color: #002855;
 }
 
 .navbar a {
@@ -48,12 +48,17 @@ img {
 }
 
 #category-box {
-    background: silver;
+    background: #EAAA00;
     padding: 5px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#category-box-h5 {
+    color: #002855
 }
 
 ul {
@@ -101,7 +106,7 @@ ul {
 
 footer {
     height: 50px;
-    background-color: black;
+    background-color: #002855;
     width: 100%;
     bottom: 0;
     position: relative;
@@ -269,17 +274,87 @@ fieldset > input:focus{
     margin-top: 15px;
 }
 
-/* TABLET OPTIMIZATION */
-@media only screen and (min-width: 768px){
-
-#category-box {
-    margin-top: 120px;
+#landing-welcome-box {
+    background-image: url('https://wallpaperaccess.com/full/4160539.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin-top: -9px;
+    margin-bottom: 10px;
 }
 
-.home-product-display {
-    justify-content: space-evenly;
+#landing-welcome-shade {
+    background-color: rgba(83,83,83,.2);
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    height: 100%;
 }
 
+.category-main-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.guitar-category {
+    margin: 10px 0;
+    width: 95%;
+    background-image: url('https://media-exp1.licdn.com/dms/image/C561BAQFDaDCrJp0JAA/company-background_10000/0/1577990526033?e=2159024400&v=beta&t=pzlR8r88RBt0-JLaPmqzZRStw3ajsKDU4viqG3B4qaM');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
 
+.bass-category {
+    margin: 10px 0;
+    width: 95%;
+    background-image: url('https://www.seymourduncan.com/images/pip_banner/High-Output-P-Bass-Pickup-11402-06-Banner.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+
+.category-links {
+    background-color: rgba(83,83,83,.4);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category-links-h2 {
+    padding: 3px;
+    font-size: 32px;
+}
+
+.category-links-button {
+        margin-top: 10px;
+        color: white;
+        background-color: rgba(1,1,1,0);
+        border: 1px solid white;
+        width: 150px;
+        height: 33px;
+        border-radius: 10px;
+        font-size: 18px;
+        transition: .3s ease-in-out;
+}
+
+.category-links-button:hover {
+    color: #EAAA00;
+    background-color: #002855;
+    border: 1px solid #EAAA00;
 }

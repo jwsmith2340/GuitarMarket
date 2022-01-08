@@ -4,9 +4,9 @@ const Category = require('../models/product')
 
 //index
 categoriesRouter.get('/', (req, res) => {
-    category.find({}, (error, allcategorys) => {
+    Category.find({}, (error, allcategories) => {
         res.render('index.ejs', {
-            categorys: allcategorys
+            categorys: allcategories
         })
     })
 })
