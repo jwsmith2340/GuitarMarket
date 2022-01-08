@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +9,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
-<div id="nav-background">
+    <div id="nav-background">
         <div class="navbar">
             <a href="/">Home</a>
             <div id="logo_div">
                 <div class="nav-logo-box">
                     <h3 class="nav-logo">Mountaineer</h3>
-                    <div><h3 class="nav-logo">Music</h3></div>
+                    <div>
+                        <h3 class="nav-logo">Music</h3>
+                    </div>
                 </div>
             </div>
             <a href="/cart">Cart</a>
@@ -33,19 +37,19 @@
             <fieldset>
                 <label for="brand">Brand</label><br>
                 <input type="text" name="brand" value="<%= product.brand %>"><br>
-    
+
                 <label for="model">Model</label><br>
                 <input type="text" name="model" value="<%= product.model %>"><br>
-    
+
                 <label for="color">Finish Color</label><br>
                 <input type="text" name="color" value="<%= product.color %>"><br>
-    
+
                 <label for="frets">Frets</label><br>
                 <input type="number" name="frets" value="<%= product.frets %>"><br>
-    
+
                 <label for="image">Image URL</label><br>
                 <input type="text" name="image" value="<%= product.image %>"><br>
-    
+
                 <input id="create_button" type="submit" value="Update Product"><br>
             </fieldset>
         </form>
@@ -53,13 +57,16 @@
 
     <footer>
         <div class="footer-box">
-        <a class="footer-a" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Contact Us</a>
-        <span id="copyright">&#169 James Smith</span>
-        <span style="font-size: 2.2em; color: white;">
-        <a class="footer-a" href="https://github.com/jwsmith2340" target="_blank"><i class="fa fa-github-square"></i></a>
-        <a class="footer-a" href="https://www.linkedin.com/in/jwsmith2340/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-        </span>
+            <a class="footer-a" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Contact Us</a>
+            <span id="copyright">&#169 James Smith</span>
+            <span style="font-size: 2.2em; color: white;">
+                <a class="footer-a" href="https://github.com/jwsmith2340" target="_blank"><i
+                        class="fa fa-github-square"></i></a>
+                <a class="footer-a" href="https://www.linkedin.com/in/jwsmith2340/" target="_blank"><i
+                        class="fa fa-linkedin-square"></i></a>
+            </span>
         </div>
     </footer>
 </body>
+
 </html>
