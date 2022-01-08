@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
-    <%- include('../partials/nav.ejs') %>
-    <h1><%= product.brand %></h1>
-    <img src="<%= product.image %>"><br>
-    <a href="/admin/<%= product._id %>/edit">Edit Product</a>
+    <div class="main-show">
+        <%- include('../partials/nav.ejs') %>
+            <div class="show-product-display">
+                <div class="product-show-image">
+                    <img src="<%= product.image %>" class="show-image">
+                </div>
+                <div class="product-show-info">
+                    <h4 class="product-info-description">
+                        <%= product.brand %>
+                        </h4>
+                        <h4 class="product-info-description">
+                        <%= product.model %>
+                    </h4>
+                    <h5 class="product-info-price">
+                        $<%= product.price %>.99
+                    </h5>
+                    <button id="show-add-cart" type="submit">Add To Cart</button>
+                </div>
+            </div>
+    </div>
+
+    <footer>
+        <div class="footer-box">
+        <a class="footer-a" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Contact Us</a>
+        <span id="copyright">&#169 James Smith</span>
+        <span style="font-size: 2.2em; color: white;">
+        <a class="footer-a" href="https://github.com/jwsmith2340" target="_blank"><i class="fa fa-github-square"></i></a>
+        <a class="footer-a" href="https://www.linkedin.com/in/jwsmith2340/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+        </span>
+        </div>
+    </footer>
+
 </body>
+
 </html>
