@@ -4,13 +4,16 @@
 <%- include('../partials/head.ejs') %>
 
     <body>
+
         <div class="main">
             <%- include('../partials/nav.ejs') %>
                 <div id="category-box">
-                    <h3>Category</h3>
-                </div>
-                
+                    <h3>Shopping Cart</h3>
+                </div>       
         </div>
+
+        <h1><%= cart[1].brand %></h1>
+        <h3><%= cart[1].model %></h3>
 
         <footer>
             <div class="footer-box">

@@ -2,8 +2,13 @@
 .landing-cat-bar { display: none; }
 .dt-top-display-box { display: none; }
 .dt-mid-three-display-box { display: none; }
+.dt-main-show { display: none; }
 
-
+.photoeater {
+    height: 42px;
+    background-color: white;
+    width: 100%;
+}
 
 * {
     margin: 0;
@@ -392,9 +397,8 @@ fieldset > input:focus{
 /* DESKTOP OPTIMIZATION */
 @media only screen and (min-width: 768px){
 
-    .mob-all-pro-display {
-        display: none;
-    }
+    .mob-all-pro-display { display: none; }
+    .main-show { display: none; }
 
     body {
         /* background-image: url('https://www.desktopbackground.org/p/2015/07/03/973755_wood-planks-pdf-woodworking_1280x853_h.jpg'); */
@@ -656,6 +660,81 @@ fieldset > input:focus{
         color: black;
         text-decoration: none;
     }
+
+    .dt-show-landing-cat-bar {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        height: 4%;
+        background-color: #EAAA00;
+        border: 0;
+        margin: 100px 0 50px 15%;
+        border-top: #002855 solid 2px;
+        justify-content: flex-start;
+    }
+
+
+
+    .dt-show-product-display-box {
+        background-color: yellow;
+        width: 70%;
+        height: 70%;
+        margin-left: 15%;
+        display: flex;
+        
+    }
+
+    .dt-show-product-image-box {
+        background-color: white;
+        height: 600px;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dt-show-product-info-box {
+        background-color: white;
+        height: 600px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 10px;
+
+    }
+
+    .dt-show-product-image {
+        height: 600px;
+        padding: 20px;
+    }
+
+    .dt-show-product-info-h2 {
+        padding: 10px;
+        margin-top: 60px;
+    }
+
+    .dt-show-product-info-h3 {
+        font-size: 40px;
+        padding: 20px;
+    }
+
+    .dt-show-product-info-p {
+        margin-top: 30px;
+        width: 90%;
+        font-size: 16px;
+        height: 50%;
+        overflow: auto;
+        line-height: 1.3;
+    }
+
+    #dt-show-footer-fixed {
+        bottom: 0;
+        position: fixed;
+    }
+
+    
+
+
    
     
     
@@ -666,13 +745,72 @@ fieldset > input:focus{
 
 
 /* 
-ul {
+.show-product-display {
+    height: 60%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    width: 90%;
+    margin: 7px 0;
+    justify-content: space-around;
     align-items: center;
 }
 
+.product-show-image {
+    margin-left: 15px;
+    padding: 10px 0;
+    max-width: 260px;
+    max-height: 550px;
+}
+
+.product-show-info {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.show-image {
+    max-height: 550px;
+    max-width: 220px;
+    height: 100%;
+    padding: 40px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.product-info-description {
+    font-size: 22px;
+}
+
+.main-show {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.product-info-price {
+    font-size: 28px;
+}
+
+#show-add-cart {
+    margin-top: 10px;
+    color: #40A251;
+    background-color: white;
+    border: 1px solid #40A251;
+    width: 150px;
+    height: 33px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: .3s ease-in-out;
+}
+
+#show-add-cart:hover {
+    color: white;
+    background-color: #40A251;
+
+}
 
 
 

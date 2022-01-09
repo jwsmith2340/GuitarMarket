@@ -7,6 +7,7 @@ module.exports = [
         price: 2699,
         category: 'guitar',
         subC1: 'electric',
+        description: "The new Les Paul Standard returns to the classic design that made it relevant, played and loved -- shaping sound across generations and genres of music. It pays tribute to Gibson's Golden Era of innovation and brings authenticity back to life. The Les Paul Standard 50's has a solid mahogany body with a maple top, a rounded 50's-style mahogany neck with a rosewood fingerboard and trapezoid inlays. It's equipped with an ABR-1, the classic-style Tune-O-Matic bridge, aluminum stop bar tailpiece, vintage deluxe tuners with keystone buttons, and aged gold tophat knobs. The calibrated Burstbucker 1 (neck) and Burstbucker 2 (bridge) pickups are loaded with AlNiCo II magnets, audio taper potentiometers and orange drop capacitors."
     },
     {
         brand: 'Gibson',
@@ -16,6 +17,7 @@ module.exports = [
         price: 2699,
         category: 'guitar',
         subC1: 'electric',
+        description: "The new Les Paul Standard returns to the classic design that made it relevant, played and loved -- shaping sound across generations and genres of music. It pays tribute to Gibson's Golden Era of innovation and brings authenticity back to life. The Les Paul Standard 60's has a solid mahogany body with an AA figured maple top, and a slim taper 60's-style mahogany neck with a rosewood fingerboard and trapezoid inlays. It's equipped with a classic-style Tune-O-Matic bridge, aluminum stop bar tailpiece, Grover Rotomatic 'Kidney' tuners, and gold top hat knobs with silver reflectors. The Burstbucker 61R (neck) Burstbucker 61T (bridge) pickups are loaded with AlNiCo V magnets, audio taper potentiometers and orange drop capacitors."
     },
     {
         brand: 'Fender',
@@ -25,6 +27,7 @@ module.exports = [
         price: 1699,
         category: 'guitar',
         subC1: 'electric',
+        description: "The American Professional II Stratocaster® draws from more than sixty years of innovation, inspiration and evolution to meet the demands of today’s working player. Our popular Deep 'C' neck now sports smooth rolled fingerboard edges, a 'Super-Natural' satin finish and a newly sculpted neck heel for a supremely comfortable feel and easy access to the upper register. New V-Mod II Stratocaster single-coil pickups are more articulate than ever while retaining bell-like chime and warmth. An upgraded 2-point tremolo with a cold-rolled steel block increases sustain, clarity and high-end sparkle. The American Pro II Stratocaster delivers instant familiarity and sonic versatility you’ll feel and hear right away, with broad ranging improvements that add up to nothing less than a new standard for professional instruments.",
     },
     {
         brand: 'Gibson',
@@ -34,6 +37,7 @@ module.exports = [
         price: 2999,
         category: 'guitar',
         subC1: 'electric',
+        description: "Gibson and Slash are proud to present the Slash Collection Gibson Les Paul Standard. It represents influential Gibson guitars Slash has used during his career, inspiring multiple generations of players around the world. The Slash Collection of Gibson guitars can be seen live on stage with Slash today. Each Slash Collection Gibson Les Paul™ Standard features a AAA flamed maple top, a solid mahogany body, and Slash’s personal touches including a 50s neck profile, Gibson Custom BurstBucker® Alnico 2 pickups, color-coordinated hardware appointments, hand-wired electronics with Orange Drop® capacitors, and a vintage-style brown hardshell case. Exclusive to the Slash Collection are Slash’s “Skully” signature drawing on the back of the headstock, Slash’s signature on the truss rod cover, a blank truss rod cover in the case, Slash-approved Ernie Ball® strings, and four Slash Jim Dunlop Tortex® picks. The Slash Gibson Les Paul Standard is available in Vermillion Burst and Anaconda Burst."
     },
     {
         brand: 'Gibson',
@@ -43,6 +47,7 @@ module.exports = [
         price: 2999,
         category: 'guitar',
         subC1: 'electric',
+        description: "Gibson and Slash are proud to present the Slash Collection Gibson Les Paul™ Standard. It represents influential Gibson guitars Slash has used during his career, inspiring multiple generations of players around the world. The Slash Collection of Gibson guitars can be seen live on stage with Slash today. Each Slash Collection Gibson Les Paul Standard features a AAA flamed maple top, a solid mahogany body, and Slash’s personal touches including a 50s neck profile, Gibson Custom BurstBucker™ Alnico 2 pickups, color-coordinated hardware appointments, hand-wired electronics with Orange Drop® capacitors, and a vintage-style brown hardshell case. Exclusive to the Slash Collection are Slash’s “Skully” signature drawing on the back of the headstock, Slash’s signature on the truss rod cover, a blank truss rod cover in the case, Slash-approved Ernie Ball® strings, and four Slash Jim Dunlop Tortex® picks. The Slash Les Paul Standard is available in November Burst and Appetite Burst."
     },
     {
         brand: 'Fender',
@@ -52,6 +57,7 @@ module.exports = [
         price: 1099,
         category: 'guitar',
         subC1: 'electric',
+        description: "Fusing classic Fender® design with player-centric features and exciting new finishes, the Player Plus Telecaster® delivers superb playability and unmistakable style. Powered by a set of Player Plus Noiseless™ pickups, the Player Plus Tele® delivers warm, sweet Tele® twang – without hum. A push-pull switch on the tone control engages both pickups in series operation, delivering increased output and body. The silky satin Modern “C” Player Plus Tele® neck fits your hand like a glove, with smooth rolled edges for supreme comfort. The 12” radius fingerboard and 22 medium jumbo frets facilitate fluid leads and choke free bends. A modern 6-saddle Tele bridge with block steel saddles adds a touch of brightness while providing precise intonation and the locking tuners provide rock-solid tuning and make string changes quick and easy. With classic Fender style, advanced features and stunning new finishes, the Player Plus Telecaster is the perfect tool to spark your creativity and stand out from the crowd."
     },
     {
         brand: 'EVH',
@@ -61,6 +67,7 @@ module.exports = [
         price: 1149,
         category: 'guitar',
         subC1: 'electric',
+        description: 'With a career of being copied, the EVH Striped Series guitars put Eddie Van Halen\'s historic and authentic style in your hands ... These are high powered, high-performance machines as kickbutt to look at as they are to play. The Striped Series guitar features a basswood Stratocaster®-style body decked out in Eddie\'s famed striped graphics — Red with Black Stripes, Black with Yellow Stripes and White with Black Stripes. These unique guitars also have a graphite-reinforced bolt-on quartersawn maple neck with a hand-rubbed oil finish on the back, 12"-16" maple fingerboard with 22 jumbo frets and black dot inlays and a thumbwheel truss rod adjustment wheel for convenient neck relief tweaks.'
     }, 
     {
         brand: 'Fender',
@@ -70,6 +77,7 @@ module.exports = [
         price: 999,
         category: 'bass',
         subC1: 'electric',
+        
     },
     {
         brand: 'Gibson',

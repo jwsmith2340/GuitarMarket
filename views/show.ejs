@@ -18,6 +18,7 @@
 <body>
     <div class="main-show">
         <%- include('../partials/nav.ejs') %>
+
             <div class="show-product-display">
                 <div class="product-show-image">
                     <img src="<%= product.image %>" class="show-image">
@@ -32,12 +33,55 @@
                     <h5 class="product-info-price">
                         $<%= product.price %>.99
                     </h5>
-                    <button id="show-add-cart" type="submit">Add To Cart</button>
+
+                    <form action="/cart" method="post">
+                        <input type="hidden" name="<%= product.brand %>">
+                        <input type="hidden" name="<%= product.model %>">
+                        <input type="hidden" name="<%= product.color %>">
+                        <input type="hidden" name="<%= product.image %>">
+                        <input type="hidden" name="<%= product.price %>">
+                        <input type="hidden" name="<%= product.category %>">
+                        <input type="hidden" name="<%= product.subC1 %>">
+                        <input type="hidden" name="<%= product.description %>">
+                        <input id="show-add-cart" type="submit" value="Add to Cart">
+                    </form>
+                    
+
+
                 </div>
             </div>
     </div>
 
-    <footer id="show-footer-fixed">
+    <div class="dt-main-show">
+        <%- include('../partials/nav.ejs') %>
+
+            <div class="dt-show-landing-cat-bar">
+                <a class="landing-cat-a" href="/product_category/guitar">Guitars</a>
+                <a class="landing-cat-a" href="/product_category/bass">Basses</a>
+                <a class="landing-cat-a" href="/product_category/effects">Effects</a>
+            </div>
+
+            <div class="dt-show-product-display-box">
+                <div class="dt-show-product-image-box">
+                    <img src="<%= product.image %>" class="dt-show-product-image">
+                </div>
+                <div class="dt-show-product-info-box">
+                    <h2 class="dt-show-product-info-h2">
+                        <%= product.brand %>
+                            <%= product.model %>
+                    </h2>
+                    <h3 class="dt-show-product-info-h3">$<%= product.price %>.99</h3>
+
+                    <input id="show-add-cart" type="submit" value="Add to Cart">
+
+                    <p class="dt-show-product-info-p">
+                        <%= product.description %>
+                    </p>
+                </div>
+            </div>
+    </div>
+
+    <footer id="dt-show-footer-fixed">
         <div class="footer-box">
             <a class="footer-a" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Contact Us</a>
             <span id="copyright">&#169 James Smith</span>
