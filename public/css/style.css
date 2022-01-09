@@ -1,4 +1,9 @@
 /* MOBILE AND GENERAL SETTINGS */
+.landing-cat-bar { display: none; }
+.dt-top-display-box { display: none; }
+.dt-mid-three-display-box { display: none; }
+
+
 
 * {
     margin: 0;
@@ -388,14 +393,21 @@ fieldset > input:focus{
 @media only screen and (min-width: 768px){
 
     body {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        /* background-image: url('https://www.desktopbackground.org/p/2015/07/03/973755_wood-planks-pdf-woodworking_1280x853_h.jpg'); */
         background-image: url('https://wallpaperaccess.com/full/4160539.jpg');
-        background-size:auto;
+        background-size: auto;
         background-repeat: none;
         background-attachment: fixed;
     }    
+
+    .body-box {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* background-image: url('https://wallpaperaccess.com/full/4160539.jpg'); */
+        background-color: rgba(88, 88, 88, 0.45);
+        /* background: linear-gradient(0.25turn, #000000, #020202, #8C3C05, #CC790A, #CC790A, #CC790A, #8C3C05, #020202, #000000); */
+    }
 
     #nav-background {
         width: 70%;
@@ -419,7 +431,7 @@ fieldset > input:focus{
 
     .landing-cat-bar {
         width: 70%;
-        display:flex;
+        display: flex;
         align-items: center;
         height: 4%;
         background-color: #EAAA00;
@@ -458,6 +470,7 @@ fieldset > input:focus{
         background-image: url('https://blog.sweelee.com/uploads/2021/05/5-Guitar-Myths-Debunked-Banner@1200x-1024x538.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        display: block;
     }
 
     .main {
@@ -519,7 +532,6 @@ fieldset > input:focus{
         background-color: blue;
         display: flex;
         flex-direction: column;
-        z-index: -2;
     }
 
     .dt-mid-three-display-middle{
@@ -563,7 +575,6 @@ fieldset > input:focus{
     }
 
     .dt-mid-three-banner-left{
-        z-index: -1;
         height: 100%;
         background-image: url('https://www.nme.com/wp-content/uploads/2020/12/slash-2000x1270-1.jpg');
         background-size: cover;
@@ -588,3 +599,8 @@ fieldset > input:focus{
     
     
 }
+
+
+
+
+
