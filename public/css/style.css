@@ -80,7 +80,8 @@ ul {
 
 .product-display-image {
     margin-left: 15px;
-    padding: 10px 0;
+    padding: 10px 5px;
+    max-width: 55px;
 }
 
 .product-display-info {
@@ -172,6 +173,8 @@ footer {
 .product-show-image {
     margin-left: 15px;
     padding: 10px 0;
+    max-width: 260px;
+    max-height: 550px;
 }
 
 .product-show-info {
@@ -184,9 +187,10 @@ footer {
 }
 
 .show-image {
-    height: 550px;
+    max-height: 550px;
+    max-width: 220px;
+    height: 100%;
     padding: 40px;
-    border: silver 1px solid;
     border-radius: 5px;
     margin-right: 8px;
 }
@@ -323,6 +327,17 @@ fieldset > input:focus{
     height: 110px;
 }
 
+.effects-category {
+    margin: 10px 0;
+    width: 95%;
+    background-image: url('https://www.peerlessmusic.com.au/wp-content/uploads/2013/10/Idiotbox-Effects-Banner-570x200.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+
 .category-links {
     background-color: rgba(83,83,83,.4);
     width: 100%;
@@ -357,4 +372,9 @@ fieldset > input:focus{
     color: #EAAA00;
     background-color: #002855;
     border: 1px solid #EAAA00;
+}
+
+#index-placeholder {
+    height: 65px;
+    background-color: white;
 }

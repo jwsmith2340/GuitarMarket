@@ -3,7 +3,6 @@ const productsRouter = express.Router()
 const Product = require('../models/product')
 
 require('dotenv').config()
-
 const { ADMINSECRET } = process.env
 
 //Seed Route - Delete Later
@@ -14,7 +13,7 @@ productsRouter.get('/products/seed', (req, res) => {
     //creates the seed, pulling from /models/bookSeed.js
     Product.create(productSeed, (error, data) => {
         //Redirect to index to display freshly made seed books
-            res.redirect('/');
+            res.redirect('/product_category');
         }
     );
 });
@@ -38,6 +37,14 @@ productsRouter.get('/guitar', (req, res) => {
 
 productsRouter.get('/bass', (req, res) => {
     Product.find({"category": "bass"}, (error, allProducts) => {
+        res.render('home.ejs', {
+            products: allProducts
+        })
+    })
+})
+
+productsRouter.get('/effects', (req, res) => {
+    Product.find({"category": "effects"}, (error, allProducts) => {
         res.render('home.ejs', {
             products: allProducts
         })
