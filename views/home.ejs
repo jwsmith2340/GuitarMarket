@@ -4,48 +4,84 @@
 <%- include('../partials/head.ejs') %>
 
     <body>
-        <div class="main">
-            <%- include('../partials/nav.ejs') %>
+        <div class="body-box">
+            <div class="main">
+                <%- include('../partials/nav.ejs') %>
 
-                <div id="category-box">
-                    <h5 id="category-box-h5">Products: <%= products.length %></h5>
-                </div>
+                    <div class="landing-cat-bar">
+                        <a class="landing-cat-a" href="/product_category/guitar">Guitars</a>
+                        <a class="landing-cat-a" href="/product_category/bass">Basses</a>
+                        <a class="landing-cat-a" href="/product_category/effects">Effects</a>
+                    </div>
 
-                <ul>
-                    <% products.forEach(pro=> { %>
-                        <div class="home-product-display">
-                            <div class="product-display-image">
-                                <a class="home-image-a" href="/product_category/<%= pro._id %>"><img src="<%= pro.image %>"
-                                        class="display-image"></a>
+                    <div id="category-box">
+                        <h5 id="category-box-h5">Products: <%= products.length %>
+                        </h5>
+                    </div>
+
+                    <ul class="mob-all-pro-display">
+                        <% products.forEach(pro=> { %>
+                            <div class="home-product-display">
+                                <div class="product-display-image">
+                                    <a class="home-image-a" href="/product_category/<%= pro._id %>"><img
+                                            src="<%= pro.image %>" class="display-image"></a>
+                                </div>
+                                <div class="product-display-info">
+                                    <p><a class="home-name-a" href="/product_category/<%= pro._id %>">
+                                            <%= pro.brand %>
+                                                <%= pro.model %>
+                                        </a><br>
+                                        <%= pro.color %><br>
+                                            $<%= pro.price %>.99<br>
+                                    </p>
+                                </div>
                             </div>
-                            <div class="product-display-info">
-                                <p><a class="home-name-a" href="/product_category/<%= pro._id %>">
-                                        <%= pro.brand %>
-                                            <%= pro.model %>
-                                    </a><br>
-                                    <%= pro.color %><br>
-                                        $<%= pro.price %>.99<br>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="home-product-price"></div>
-                        <% }) %>
-                </ul>
-        </div>
+                            <div class="home-product-price"></div>
+                            <% }) %>
+                    </ul>
 
-        <footer>
-            <div class="footer-box">
-                <a class="footer-a" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Contact Us</a>
-                <span id="copyright">&#169 James Smith</span>
-                <span style="font-size: 2.2em; color: white;">
-                    <a class="footer-a" href="https://github.com/jwsmith2340" target="_blank"><i
-                            class="fa fa-github-square"></i></a>
-                    <a class="footer-a" href="https://www.linkedin.com/in/jwsmith2340/" target="_blank"><i
-                            class="fa fa-linkedin-square"></i></a>
-                </span>
+                    <div class="dt-all-pro-display-wrap">
+                        
+                            <% products.forEach(pro=> { %>
+                                <a href="/product_category/<%= pro._id %>"><div class="dt-each-pro-box">
+                                    <div class="dt-each-pro-contents">
+                                        <img class="dt-display-image" src="<%= pro.image %>">
+                                        <p class="dt-each-pro-contents-p"><a class="dt-home-name-a" href="/product_category/<%= pro._id %>">
+                                            <%= pro.brand %>
+                                                <%= pro.model %>
+                                        </a><br>
+                                            $<%= pro.price %>.99<br>
+                                    </p>
+                                    
+                                    </div>
+                                </div></a>
+
+
+
+
+                            <% }) %>
+
+                        
+                    </div>
+
+
+
             </div>
-        </footer>
 
+            <footer>
+                <div class="footer-box">
+                    <a class="footer-a" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Contact
+                        Us</a>
+                    <span id="copyright">&#169 James Smith</span>
+                    <span style="font-size: 2.2em; color: white;">
+                        <a class="footer-a" href="https://github.com/jwsmith2340" target="_blank"><i
+                                class="fa fa-github-square"></i></a>
+                        <a class="footer-a" href="https://www.linkedin.com/in/jwsmith2340/" target="_blank"><i
+                                class="fa fa-linkedin-square"></i></a>
+                    </span>
+                </div>
+            </footer>
+        </div>
     </body>
 
 </html>

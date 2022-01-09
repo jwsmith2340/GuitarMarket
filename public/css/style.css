@@ -66,7 +66,7 @@ img {
     color: #002855
 }
 
-ul {
+.mob-all-pro-display {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -392,6 +392,10 @@ fieldset > input:focus{
 /* DESKTOP OPTIMIZATION */
 @media only screen and (min-width: 768px){
 
+    .mob-all-pro-display {
+        display: none;
+    }
+
     body {
         /* background-image: url('https://www.desktopbackground.org/p/2015/07/03/973755_wood-planks-pdf-woodworking_1280x853_h.jpg'); */
         background-image: url('https://wallpaperaccess.com/full/4160539.jpg');
@@ -596,6 +600,63 @@ fieldset > input:focus{
         background-position: top;
         background-repeat: no-repeat;
     }
+
+    #category-box {
+        background: #EAAA00;
+        padding: 5px;
+        margin: 10px 15% 5px 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+
+    .dt-all-pro-display-wrap {
+        width: 70%;
+        margin: 30px 15%;
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .dt-each-pro-box {
+        height: 420px;
+        width: 25%;
+        background-color: rgba(255, 255, 255, .0);
+        border: 2px solid transparent;
+        margin:0;
+        transition: .1s;
+    }
+
+    .dt-each-pro-contents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dt-display-image {
+        max-height: 300px;
+        max-width: 220px;
+        height: 100%;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .dt-each-pro-contents-p {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .dt-each-pro-box:hover {
+        border: rgba(88, 88, 88, 0.45) solid 2px;
+    }
+
+    .dt-home-name-a {
+        color: black;
+        text-decoration: none;
+    }
+   
     
     
 }
@@ -604,3 +665,16 @@ fieldset > input:focus{
 
 
 
+/* 
+ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+*/
