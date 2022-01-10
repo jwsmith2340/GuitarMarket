@@ -19,6 +19,14 @@ cartRouter.get('/', (req, res) => {
         })
     })
 })
+
+//delete
+cartRouter.delete('/:id', (req, res) => {
+    Cart.findByIdAndDelete(req.params.id, (err, deletedProduct) => {
+        res.redirect('/cart')
+    })
+})
+
 //create
 cartRouter.post('/', (req, res) => {
     Cart.create(req.body, (error, newCart) => {
