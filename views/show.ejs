@@ -34,16 +34,18 @@
                         $<%= product.price %>.99
                     </h5>
 
-                    <form action="/cart" method="post">
-                        <input type="hidden" name="<%= product.brand %>">
-                        <input type="hidden" name="<%= product.model %>">
-                        <input type="hidden" name="<%= product.color %>">
-                        <input type="hidden" name="<%= product.image %>">
-                        <input type="hidden" name="<%= product.price %>">
-                        <input type="hidden" name="<%= product.category %>">
-                        <input type="hidden" name="<%= product.subC1 %>">
-                        <input type="hidden" name="<%= product.description %>">
+                    <form action="/cart" method="POST">
+                        <fieldset>
+                        <input type="hidden" name="brand" value="<%= product.brand %>">
+                        <input type="hidden" name="model" value="<%= product.model %>">
+                        <input type="hidden" name="color" value="<%= product.color %>">
+                        <input type="hidden" name="image" value="<%= product.image %>">
+                        <input type="hidden" name="price" value="<%= product.price %>">
+                        <input type="hidden" name="category" value="<%= product.category %>">
+                        <input type="hidden" name="subC1" value="<%= product.subC1 %>">
+                        <input type="hidden" name="description" value="<%= product.description %>">
                         <input id="show-add-cart" type="submit" value="Add to Cart">
+                        </fieldset>
                     </form>
                     
 

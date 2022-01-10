@@ -7,15 +7,41 @@
 
         <div class="main">
             <%- include('../partials/nav.ejs') %>
+            
                 <div id="category-box">
-                    <h3>Shopping Cart</h3>
+                    <h3 class="mob-category-box-cart">Shopping Cart</h3>
                 </div>       
         </div>
 
-        <h1><%= cart[1].brand %></h1>
-        <h3><%= cart[1].model %></h3>
+        <% let count = 0; %>
+        <ul class="mob-all-pro-display">
+            <% cart.forEach(pro=> { %>
+                <% count += pro.price + .99%>
+                <div class="mob-cart-display">
+                    <div class="mob-cart-display-image">
+                        <img src="<%= pro.image %>" class="mob-cart-image">
+                    </div>
+                    <div class="mob-product-cart-info">
+                        <p class="mob-cart-p">$<%= pro.price %>.99<br></p>
+                        <% if (pro.price > 99) { %>
+                            <p class="mob-cart-p-shipping">Ships for Free!</p>
+                        <% } %>
+                        
+                        <form class="mob-cart-delete-form" action="/cart?_method=DELETE" method="post">
+                            <input class="mob-cart-delete-form-button" type="submit" value="Remove From Cart">
+                        </form>
 
-        <footer>
+                    </div>
+                </div>
+                <% }) %>
+        </ul>
+
+        <div class="mob-total-checkout">
+            <h4 class="mob-total-checkout-h4">Subtotal: $<%= count.toFixed(2) %></h4>
+            <button class="mob-checkout-button">Proceed to Checkout</button>
+        </div>
+
+        <footer id="cart-footer">
             <div class="footer-box">
                 <a class="footer-a" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Contact Us</a>
                 <span id="copyright">&#169 James Smith</span>

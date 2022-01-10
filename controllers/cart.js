@@ -1,6 +1,15 @@
 const express = require('express')
 const cartRouter = express.Router()
-const Cart = require('../models/product')
+const Cart = require('../models/carts')
+
+//Seed Route - Delete Later
+const cartSeed = require('../models/cartSeed')
+cartRouter.get('/seed', (req, res) => {
+    Cart.deleteMany({}, (error, allCart) => {})
+    Cart.create(cartSeed, (error, data) => {
+        res.redirect('/cart')
+    })
+})
 
 //index
 cartRouter.get('/', (req, res) => {
@@ -10,16 +19,9 @@ cartRouter.get('/', (req, res) => {
         })
     })
 })
-
-//new
-
-//delete
-
-//update
-
 //create
 cartRouter.post('/', (req, res) => {
-    Cart.create(req.body, (err, newProduct) => {
+    Cart.create(req.body, (error, newCart) => {
         res.redirect('/cart')
     })
 })

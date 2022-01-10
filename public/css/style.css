@@ -394,6 +394,127 @@ fieldset > input:focus{
     bottom: 0;
 }
 
+
+.mob-all-pro-display {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mob-cart-display {
+    height: 150px;
+    display: flex;
+    width: 90%;
+    margin: 7px 0;
+    border-top: 1.7px black solid;
+    border-bottom: 1px black solid;
+    justify-content: space-around;
+}
+
+.home-product-display {
+    height: 150px;
+    display: flex;
+    width: 90%;
+    margin: 7px 0;
+    border-top: 1.7px black solid;
+    border-bottom: 1px black solid;
+    justify-content: space-around;
+}
+
+.mob-cart-display-image {
+    margin-left: 15px;
+    padding: 10px 5px;
+    max-width: 55px;
+}
+
+.mob-cart-image {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.mob-product-cart-info {
+    width: 60%;
+    margin-right: 15px;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cart-footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.mob-cart-p {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.mob-cart-p-shipping {
+    font-size: 12px;
+    color: #002855;
+}
+
+.mob-cart-trash {
+    margin-top: 15px;
+    padding: 6px;
+}
+
+#mob-cart-trash-fa {
+    font-size: 20px;
+}
+
+.mob-total-checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.mob-checkout-button {
+    margin-top: 10px;
+    color: #40A251;
+    background-color: white;
+    border: 1px solid #40A251;
+    width: 225px;
+    height: 33px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: .3s ease-in-out;
+}
+
+.mob-checkout-button:hover {
+    color: white;
+    background-color: #40A251;
+}
+
+.mob-category-box-cart {
+    color: white;
+}
+
+.mob-cart-delete-form-button {
+    margin-top: 10px;
+    color: #d13131;
+    background-color: white;
+    border: 1px solid #d13131;
+    width: 130px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: .3s ease-in-out;
+}
+
+.mob-cart-delete-form-button:hover {
+    color: white;
+    background-color: #d13131;
+}
+
+
+
 /* DESKTOP OPTIMIZATION */
 @media only screen and (min-width: 768px){
 
@@ -732,10 +853,8 @@ fieldset > input:focus{
         position: fixed;
     }
 
-    
 
 
-   
     
     
 }
@@ -745,74 +864,27 @@ fieldset > input:focus{
 
 
 /* 
-.show-product-display {
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 7px 0;
-    justify-content: space-around;
-    align-items: center;
-}
+<ul class="mob-all-pro-display">
+            <% cart.forEach(pro=> { %>
+                <div class="home-product-display">
+                    <div class="product-display-image">
+                        <a class="home-image-a" href="/product_category/<%= pro._id %>"><img
+                                src="<%= pro.image %>" class="display-image"></a>
+                    </div>
+                    <div class="product-display-info">
+                        <p><a class="home-name-a" href="/product_category/<%= pro._id %>">
+                                <%= pro.brand %>
+                                    <%= pro.model %>
+                            </a><br>
+                            <%= pro.color %><br>
+                                $<%= pro.price %>.99<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="home-product-price"></div>
+                <% }) %>
+        </ul>
 
-.product-show-image {
-    margin-left: 15px;
-    padding: 10px 0;
-    max-width: 260px;
-    max-height: 550px;
-}
-
-.product-show-info {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.show-image {
-    max-height: 550px;
-    max-width: 220px;
-    height: 100%;
-    padding: 40px;
-    border-radius: 5px;
-    margin-right: 8px;
-}
-
-.product-info-description {
-    font-size: 22px;
-}
-
-.main-show {
-    margin-top: 90px;
-    display: flex;
-    justify-content: center;
-}
-
-.product-info-price {
-    font-size: 28px;
-}
-
-#show-add-cart {
-    margin-top: 10px;
-    color: #40A251;
-    background-color: white;
-    border: 1px solid #40A251;
-    width: 150px;
-    height: 33px;
-    border-radius: 10px;
-    font-size: 18px;
-    transition: .3s ease-in-out;
-}
-
-#show-add-cart:hover {
-    color: white;
-    background-color: #40A251;
-
-}
-
-
-
+    
 
 */

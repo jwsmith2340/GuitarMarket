@@ -78,7 +78,7 @@ productsRouter.put('/:id', (req, res) => {
 //create
 productsRouter.post('/', (req, res) => {
     Product.create(req.body, (err, newProduct) => {
-        res.redirect('/')
+        res.redirect('/product_category')
     })
 })
 
