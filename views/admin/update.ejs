@@ -33,7 +33,7 @@
 
     <div class="main">
         <h2 id="new-title">Edit Product</h2>
-        <form class="new_form" action="/<%= product._id %>?_method=PUT" method="post">
+        <form class="mob-edit-form" action="/<%= product._id %>?_method=PUT" method="post">
             <fieldset>
                 <label for="brand">Brand</label><br>
                 <input type="text" name="brand" value="<%= product.brand %>"><br>
@@ -62,6 +62,14 @@
                 <input id="create_button" type="submit" value="Update Product"><br>
             </fieldset>
         </form>
+
+        <div class="mob-edit-delete-box">
+        <h2 id="mob-edit-delete-header">Delete Product</h2>
+        <form action="/product_category/<%= product._id %>?_method=DELETE" method="post">
+            <input id="delete_button" type="submit" value="Delete Product"><br>
+        </form>
+        </div>
+
     </div>
 
     <footer>

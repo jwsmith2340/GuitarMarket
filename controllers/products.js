@@ -59,7 +59,7 @@ productsRouter.get(`/${ADMINSECRET}/new`, (req, res) => {
 //delete
 productsRouter.delete('/:id', (req, res) => {
     Product.findByIdAndDelete(req.params.id, (err, deletedProduct) => {
-        res.redirect('/')
+        res.redirect('/product_category')
     })
 })
 

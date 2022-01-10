@@ -3,6 +3,7 @@
 .dt-top-display-box { display: none; }
 .dt-mid-three-display-box { display: none; }
 .dt-main-show { display: none; }
+.dt-all-pro-display-wrap { display: none; }
 
 .photoeater {
     height: 42px;
@@ -59,11 +60,10 @@ img {
 
 #category-box {
     background: #EAAA00;
-    padding: 5px;
     margin-top: 10px;
     margin-bottom: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -261,6 +261,7 @@ fieldset {
     border: 1px solid #40A251;
     color: #40A251;
     background-color: white;
+    border-radius: 5px;
 }
 
 #create_button:hover {
@@ -513,6 +514,76 @@ fieldset > input:focus{
     background-color: #d13131;
 }
 
+#delete_button {
+    margin-top: 10px;
+    transition: .2s ease-in-out;
+    height: 30px;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 3px;
+    color: white;
+    border: 1px solid #d13131;
+    color: #d13131;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#delete_button:hover {
+    background-color: #d13131;
+    color: white;
+}
+
+#mob-edit-delete-header {
+    color: #d13131;
+}
+
+.mob-edit-form {
+    margin-top: 20px;
+    height: 60vh;
+}
+
+.mob-edit-delete-box {
+    margin: 25px 0 20px 5%;
+}
+
+#nav-background {
+    z-index: 5;
+}
+
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-h5 {
+      font-size: 16px;
+      color: #002855;
+      padding: 5px;
+  }
+
+
+
+
+
+
 
 
 /* DESKTOP OPTIMIZATION */
@@ -728,7 +799,6 @@ fieldset > input:focus{
 
     #category-box {
         background: #EAAA00;
-        padding: 5px;
         margin: 10px 15% 5px 15%;
         display: flex;
         justify-content: center;
