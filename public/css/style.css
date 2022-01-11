@@ -31,6 +31,7 @@ img {
     border: 0;
     position: fixed;
     top: 0;
+    z-index: 5;
 }
 
 .navbar {
@@ -391,12 +392,6 @@ fieldset > input:focus{
     background-color: white;
 }
 
-#show-footer-fixed {
-    position:sticky;
-    bottom: 0;
-}
-
-
 .mob-all-pro-display {
     display: flex;
     justify-content: center;
@@ -452,8 +447,12 @@ fieldset > input:focus{
 }
 
 .mob-cart-p {
-    margin-top: 20px;
+    margin-top: 5px;
     font-size: 24px;
+}
+
+.mob-cart-h4 {
+    text-align: center;
 }
 
 .mob-cart-p-shipping {
@@ -547,10 +546,10 @@ fieldset > input:focus{
     margin: 25px 0 20px 5%;
 }
 
-#nav-background {
-    z-index: 5;
+.mob-total-checkout-taxtotal {
+    text-align: center;
+    margin-bottom: 5px;
 }
-
 
 
 
@@ -576,13 +575,13 @@ fieldset > input:focus{
     z-index: 1;
   }
   
-  .dropdown-guitar:hover .dropdown-content-guitar {
+  /* .dropdown-guitar:hover .dropdown-content-guitar {
     display: block;
   }
 
   .dropdown-bass:hover .dropdown-content-bass {
     display: block;
-  }
+  } */
   
   .dropdown-h5 {
       font-size: 16px;
@@ -595,12 +594,27 @@ fieldset > input:focus{
       text-decoration: none;
   }
 
+  .category-main-box-spaceeater {
+      height: 50px;
+      background-color: white;
+  }
 
+  #mob-show-category-box {
+      position: absolute;
+      width: 100%;
+      background: #EAAA00;
+      margin-bottom: 5px;
+      justify-content: flex-start;
+      display: flex;
+      height: 30px;
+      align-items: center;
+  }
 
-
-
-
-
+  #dt-show-footer-fixed {
+    bottom: 0;
+    position: relative;
+    margin-top: 0;
+}
 
 /* DESKTOP OPTIMIZATION */
 @media only screen and (min-width: 768px){
@@ -690,6 +704,7 @@ fieldset > input:focus{
     }
 
     .main {
+        margin-top: 90px;
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -814,12 +829,7 @@ fieldset > input:focus{
     }
 
     #category-box {
-        background: #EAAA00;
-        margin: 10px 15% 5px 15%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 70%;
+        display: none;
     }
 
     .dt-all-pro-display-wrap {
@@ -875,7 +885,7 @@ fieldset > input:focus{
         height: 4%;
         background-color: #EAAA00;
         border: 0;
-        margin: 100px 0 50px 15%;
+        margin: 20px 0 50px 15%;
         border-top: #002855 solid 2px;
         justify-content: flex-start;
     }
@@ -937,40 +947,15 @@ fieldset > input:focus{
     #dt-show-footer-fixed {
         bottom: 0;
         position: fixed;
+        margin-top: 30px;
     }
-
-
-
     
+    .dt-main-show {
+        margin-top: 90px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
     
 }
 
-
-
-
-
-/* 
-<ul class="mob-all-pro-display">
-            <% cart.forEach(pro=> { %>
-                <div class="home-product-display">
-                    <div class="product-display-image">
-                        <a class="home-image-a" href="/product_category/<%= pro._id %>"><img
-                                src="<%= pro.image %>" class="display-image"></a>
-                    </div>
-                    <div class="product-display-info">
-                        <p><a class="home-name-a" href="/product_category/<%= pro._id %>">
-                                <%= pro.brand %>
-                                    <%= pro.model %>
-                            </a><br>
-                            <%= pro.color %><br>
-                                $<%= pro.price %>.99<br>
-                        </p>
-                    </div>
-                </div>
-                <div class="home-product-price"></div>
-                <% }) %>
-        </ul>
-
-    
-
-*/

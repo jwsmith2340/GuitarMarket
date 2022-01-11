@@ -7,9 +7,34 @@
 
         <div class="main">
             <%- include('../partials/nav.ejs') %>
-            
                 <div id="category-box">
-                    <h3 class="mob-category-box-cart">Shopping Cart</h3>
+                    
+                    <div class="dropdown-guitar">
+
+                        <a class="nav-dropdown-a" href="/product_category/guitar"><h5 class="dropdown-h5">Guitars</h5></a>
+                        <div class="dropdown-content-guitar">
+                            <p>Sub1</p>
+                        </div>
+
+                    </div>
+
+                    
+                    <div class="dropdown-bass">
+                        <a class="nav-dropdown-a" href="/product_category/bass"><h5 class="dropdown-h5">Basses</h5></a>
+                        <div class="dropdown-content-bass">
+                            <p>Sub1</p>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown-effects">
+                        <a class="nav-dropdown-a" href="/product_category/effects"><h5 class="dropdown-h5">Effects</h5></a>
+                        <div class="dropdown-content-bass">
+                            <p>Sub1</p>
+                        </div>
+
+                    </div>
+
                 </div>       
         </div>
 
@@ -22,6 +47,7 @@
                         <img src="<%= pro.image %>" class="mob-cart-image">
                     </div>
                     <div class="mob-product-cart-info">
+                        <h4 class="mob-cart-h4"><%= pro.brand %> <%= pro.model %></h4>
                         <p class="mob-cart-p">$<%= pro.price %>.99<br></p>
                         <% if (pro.price > 99) { %>
                             <p class="mob-cart-p-shipping">Ships for Free!</p>
@@ -37,11 +63,26 @@
         </ul>
 
         <div class="mob-total-checkout">
-            <h4 class="mob-total-checkout-h4">Subtotal: $<%= count.toFixed(2) %></h4>
+            <% let countTaxShipping = count * 0.06 + count %>
+            <div class="mob-total-checkout-taxtotal">
+                <h6>Product Total: $<%= count.toFixed(2) %></h6>
+                <h6>Tax: $<%= (count * 0.06).toFixed(2) %></h6>
+                <% if (count < 99.99 && count !== 0) { %>
+                    <h6>Shipping: $9.99</h6>
+                    <% countTaxShipping += 9.99 %>
+                <% } else if (count === 0) { %>
+                    <h6>Shipping: $0.00</h6>
+                <% } else { %>
+                    <h6>Shipping: Free!</h6>
+                <% } %>
+            </div>
+
+            <h4 class="mob-total-checkout-h4">Subtotal: $<%= countTaxShipping.toFixed(2) %></h4>
             <% if (count > 99) { %>
                 <p class="mob-cart-p-shipping">Your Order Ships for Free!</p>
             <% } %>
             <button class="mob-checkout-button">Proceed to Checkout</button>
+
         </div>
 
         <footer id="cart-footer">

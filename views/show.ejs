@@ -16,8 +16,39 @@
 </head>
 
 <body>
+    <div class="body-box">
     <div class="main-show">
         <%- include('../partials/nav.ejs') %>
+
+        <div id="mob-show-category-box">
+                    
+            <div class="dropdown-guitar">
+
+                <a class="nav-dropdown-a" href="/product_category/guitar"><h5 class="dropdown-h5">Guitars</h5></a>
+                <div class="dropdown-content-guitar">
+                    <p>Sub1</p>
+                </div>
+
+            </div>
+
+            
+            <div class="dropdown-bass">
+                <a class="nav-dropdown-a" href="/product_category/bass"><h5 class="dropdown-h5">Basses</h5></a>
+                <div class="dropdown-content-bass">
+                    <p>Sub1</p>
+                </div>
+
+            </div>
+
+            <div class="dropdown-effects">
+                <a class="nav-dropdown-a" href="/product_category/effects"><h5 class="dropdown-h5">Effects</h5></a>
+                <div class="dropdown-content-bass">
+                    <p>Sub1</p>
+                </div>
+
+            </div>
+
+        </div>       
 
             <div class="show-product-display">
                 <div class="product-show-image">
@@ -74,7 +105,19 @@
                     </h2>
                     <h3 class="dt-show-product-info-h3">$<%= product.price %>.99</h3>
 
-                    <input id="show-add-cart" type="submit" value="Add to Cart">
+                    <form action="/cart" method="POST">
+                        <fieldset>
+                        <input type="hidden" name="brand" value="<%= product.brand %>">
+                        <input type="hidden" name="model" value="<%= product.model %>">
+                        <input type="hidden" name="color" value="<%= product.color %>">
+                        <input type="hidden" name="image" value="<%= product.image %>">
+                        <input type="hidden" name="price" value="<%= product.price %>">
+                        <input type="hidden" name="category" value="<%= product.category %>">
+                        <input type="hidden" name="subC1" value="<%= product.subC1 %>">
+                        <input type="hidden" name="description" value="<%= product.description %>">
+                        <input id="show-add-cart" type="submit" value="Add to Cart">
+                        </fieldset>
+                    </form>
 
                     <p class="dt-show-product-info-p">
                         <%= product.description %>
@@ -82,7 +125,7 @@
                 </div>
             </div>
     </div>
-
+    
     <footer id="dt-show-footer-fixed">
         <div class="footer-box">
             <a class="footer-a" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Contact Us</a>
@@ -95,7 +138,7 @@
             </span>
         </div>
     </footer>
-
+</div>
 </body>
 
 </html>
