@@ -75,15 +75,20 @@
 
                     <div class="dt-all-pro-display-wrap">
                             <% products.forEach(pro=> { %>
-                                <a href="/product_category/<%= pro._id %>"><div class="dt-each-pro-box">
-                                    <div class="dt-each-pro-contents">
+                                <a href="/product_category/<%= pro._id %>">
+                                    <div class="dt-each-pro-box">
+                                    
+                                        <div class="dt-each-pro-contents-img">
                                         <img class="dt-display-image" src="<%= pro.image %>">
+                                        </div>
+                                        <div class="dt-each-pro-contents-p">
                                         <p class="dt-each-pro-contents-p"><a class="dt-home-name-a" href="/product_category/<%= pro._id %>">
                                             <%= pro.brand %>
                                                 <%= pro.model %>
                                         </a><br>
                                             $<%= pro.price %>.99<br>
                                     </p>
+                                   
                                     
                                     </div>
                                 </div></a>
