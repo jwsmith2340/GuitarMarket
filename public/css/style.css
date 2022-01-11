@@ -4,6 +4,7 @@
 .dt-mid-three-display-box { display: none; }
 .dt-main-show { display: none; }
 .dt-all-pro-display-wrap { display: none; }
+.dt-cart-box { display: none }
 
 .photoeater {
     height: 42px;
@@ -956,6 +957,144 @@ fieldset > input:focus{
         justify-content: center;
         display: flex;
         flex-direction: column;
+    }
+
+    .dt-cart-box {
+        width: 70%;
+        margin-left: 15%;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .dt-main-show {
+        margin-top: 90px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dt-all-pro-display {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dt-cart-display {
+        height: 300px;
+        display: flex;
+        width: 600px;
+        margin: 0;
+        justify-content: space-around;
+        border-right: 1.5px solid black;
+    }
+
+    .dt-cart-display-image {
+        margin-left: 15px;
+        padding: 10px 5px;
+        max-width: 105px;
+    }
+
+    .dt-cart-image {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+        height: 300px;
+    }
+
+    .dt-product-cart-info {
+        width: 60%;
+        margin-right: 15px;
+        padding: 10px;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dt-cart-h4 {
+        text-align: center;
+    }
+
+    .dt-cart-p {
+        margin-top: 5px;
+        font-size: 34px;
+    }
+
+    .dt-cart-p-shipping {
+        font-size: 18px;
+        color: #002855;
+    }
+
+    .dt-cart-delete-form-button {
+        margin-top: 10px;
+        color: #d13131;
+        background-color: white;
+        border: 1px solid #d13131;
+        width: 130px;
+        height: 25px;
+        border-radius: 10px;
+        font-size: 14px;
+        transition: .3s ease-in-out;
+    }
+    
+    .dt-cart-delete-form-button:hover {
+        color: white;
+        background-color: #d13131;
+    }
+
+    .dt-total-checkout {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    .dt-total-checkout-taxtotal {
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .dt-cart-p-shipping {
+        font-size: 18px;
+        color: #002855;
+    }
+
+    .dt-checkout-button {
+        margin: 10px 0 20px;
+        color: #40A251;
+        background-color: white;
+        border: 1px solid #40A251;
+        width: 225px;
+        height: 33px;
+        border-radius: 10px;
+        font-size: 18px;
+        transition: .3s ease-in-out;
+    }
+    
+    .dt-checkout-button:hover {
+        color: white;
+        background-color: #40A251;
+    }
+
+    .dt-cart-main {
+        height: 100vh;
+    }
+
+    .dt-total-checkout-h4 {
+        font-size: 22px;
+    }
+
+    .dt-total-checkout-taxtotal > h6 {
+        font-size: 18px;
+    }
+
+    #dt-total-checkout-top-h6 {
+        margin-top: 50px;
     }
     
 }
