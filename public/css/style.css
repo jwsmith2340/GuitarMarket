@@ -19,6 +19,14 @@
     font-family: sans-serif;
 }
 
+#show-add-cart:hover {
+    cursor: pointer;
+}
+
+.dt-checkout-button:hover {
+    cursor: pointer;
+}
+
 img {
     height: 150px;
 }
@@ -621,6 +629,7 @@ fieldset > input:focus{
 
     .mob-all-pro-display { display: none; }
     .main-show { display: none; }
+    .mob-total-checkout { display: none }
 
     body {
         /* background-image: url('https://www.desktopbackground.org/p/2015/07/03/973755_wood-planks-pdf-woodworking_1280x853_h.jpg'); */
@@ -745,6 +754,10 @@ fieldset > input:focus{
         color: #EAAA00;
         background-color: #002855;
         border: 1px solid #EAAA00;
+    }
+
+    button:hover {
+        cursor: pointer;
     }
 
     .dt-mid-three-display-box{
@@ -895,11 +908,11 @@ fieldset > input:focus{
 
 
     .dt-show-product-display-box {
-        background-color: yellow;
         width: 70%;
         height: 70%;
         margin-left: 15%;
         display: flex;
+        padding-bottom: 160px;
         
     }
 
@@ -957,6 +970,7 @@ fieldset > input:focus{
         justify-content: center;
         display: flex;
         flex-direction: column;
+
     }
 
     .dt-cart-box {
@@ -964,7 +978,8 @@ fieldset > input:focus{
         margin-left: 15%;
         background-color: white;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        margin-bottom: 100px;
     }
     
     .dt-main-show {
@@ -984,7 +999,7 @@ fieldset > input:focus{
     .dt-cart-display {
         height: 300px;
         display: flex;
-        width: 600px;
+        width: 100%;
         margin: 0;
         justify-content: space-around;
         border-right: 1.5px solid black;
@@ -1043,6 +1058,7 @@ fieldset > input:focus{
     .dt-cart-delete-form-button:hover {
         color: white;
         background-color: #d13131;
+        cursor: pointer;
     }
 
     .dt-total-checkout {
@@ -1050,13 +1066,83 @@ fieldset > input:focus{
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        margin-top: 10px;
-        width: 100%;
+        width: 30%;
+        margin: 10px 10px 0 25px;
     }
     
     .dt-total-checkout-taxtotal {
         text-align: center;
         margin-bottom: 12px;
+    }
+
+    .dt-cart-p-shipping {
+        font-size: 14px;
+        color: #002855;
+    }
+
+    .dt-checkout-button {
+        margin: 10px 0 20px;
+        color: #40A251;
+        background-color: white;
+        border: 1px solid #40A251;
+        width: 150px;
+        height: 33px;
+        border-radius: 10px;
+        font-size: 14px;
+        transition: .3s ease-in-out;
+    }
+    
+    .dt-checkout-button:hover {
+        color: white;
+        background-color: #40A251;
+    }
+
+    .dt-cart-main {
+        height: 100%;
+        min-height: 100vh;
+    }
+
+    .dt-total-checkout-h4 {
+        font-size: 15px;
+    }
+
+    .dt-total-checkout-taxtotal > h6 {
+        font-size: 14px;
+    }
+
+    #dt-total-checkout-top-h6 {
+        margin-top: 50px;
+    }
+    
+}
+
+@media only screen and (min-width: 1020px) {
+    .dt-each-pro-box {
+        width: 20%;
+    }
+
+    .dt-total-checkout-h4 {
+        font-size: 22px;
+    }
+
+    .dt-total-checkout-taxtotal > h6 {
+        font-size: 18px;
+    }
+
+    .dt-each-pro-contents-p {
+        text-align: center;
+        font-size: 20px;
+        height: 70px;
+    }
+
+    .dt-cart-p-shipping {
+        font-size: 18px;
+        color: #002855;
+    }
+
+    .dt-cart-p {
+        margin-top: 5px;
+        font-size: 34px;
     }
 
     .dt-cart-p-shipping {
@@ -1075,44 +1161,35 @@ fieldset > input:focus{
         font-size: 18px;
         transition: .3s ease-in-out;
     }
-    
-    .dt-checkout-button:hover {
-        color: white;
-        background-color: #40A251;
-    }
 
-    .dt-cart-main {
-        height: 100vh;
-    }
 
-    .dt-total-checkout-h4 {
-        font-size: 22px;
-    }
-
-    .dt-total-checkout-taxtotal > h6 {
-        font-size: 18px;
-    }
-
-    #dt-total-checkout-top-h6 {
-        margin-top: 50px;
-    }
-    
-}
-
-@media only screen and (min-width: 1020px) {
-    .dt-each-pro-box {
-        width: 20%;
-    }
 }
 
 @media only screen and (min-width: 1200px) {
     .dt-each-pro-box {
         width: 16.66%;
     }
+
+    .dt-total-checkout {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 40%;
+    }
 }
 
 @media only screen and (min-width: 1600px) {
     .dt-each-pro-box {
         width: 14.28571%;
+    }
+
+    .dt-total-checkout {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 30%;
+        margin-left: 80px;
     }
 }
