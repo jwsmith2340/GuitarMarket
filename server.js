@@ -14,10 +14,10 @@ require('dotenv').config()
 const app = express()
 
 //Env link
-const { PORT, DATABASE_URI, SECRET } = process.env
+const { PORT, MONGODB_URI, SECRET } = process.env
 
 //Mongo connection
-mongoose.connect(DATABASE_URI)
+mongoose.connect(MONGODB_URI)
 
 const db = mongoose.connection
 
