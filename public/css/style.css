@@ -6,6 +6,105 @@
 .dt-all-pro-display-wrap { display: none; }
 .dt-cart-box { display: none }
 
+.category-links {
+    background-color: rgba(83,83,83,.4);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category-links-h2 {
+    padding: 3px;
+    font-size: 32px;
+}
+
+.category-links-button {
+        margin-top: 10px;
+        color: white;
+        background-color: rgba(1,1,1,0);
+        border: 1px solid white;
+        width: 150px;
+        height: 33px;
+        border-radius: 10px;
+        font-size: 18px;
+        transition: .3s ease-in-out;
+}
+
+.category-links-button:hover {
+    color: #EAAA00;
+    background-color: #002855;
+    border: 1px solid #EAAA00;
+}   
+
+
+
+.category-main-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.guitar-category {
+    margin: 10px 0;
+    width: 95%;
+    background-image: url('https://media-exp1.licdn.com/dms/image/C561BAQFDaDCrJp0JAA/company-background_10000/0/1577990526033?e=2159024400&v=beta&t=pzlR8r88RBt0-JLaPmqzZRStw3ajsKDU4viqG3B4qaM');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+
+.bass-category {
+    margin: 10px 0;
+    width: 95%;
+    background-image: url('https://www.seymourduncan.com/images/pip_banner/High-Output-P-Bass-Pickup-11402-06-Banner.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+
+.effects-category {
+    margin: 10px 0;
+    width: 95%;
+    background-image: url('https://www.peerlessmusic.com.au/wp-content/uploads/2013/10/Idiotbox-Effects-Banner-570x200.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+
+
+#landing-welcome-box {
+    background-image: url('https://wallpaperaccess.com/full/4160539.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin-top: -9px;
+    margin-bottom: 10px;
+}
+
+#landing-welcome-shade {
+    background-color: rgba(83,83,83,.2);
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    height: 100%;
+}
+
 .photoeater {
     height: 42px;
     background-color: white;
@@ -305,7 +404,7 @@ fieldset > input:focus{
     align-items: center;
 }
 
-/* .mob-cart-display {
+.mob-cart-display {
     height: 150px;
     display: flex;
     width: 90%;
@@ -313,7 +412,7 @@ fieldset > input:focus{
     border-top: 1.7px black solid;
     border-bottom: 1px black solid;
     justify-content: space-around;
-} */
+}
 
 .home-product-display {
     height: 150px;
@@ -325,19 +424,19 @@ fieldset > input:focus{
     justify-content: space-around;
 }
 
-/* .mob-cart-display-image {
+.mob-cart-display-image {
     margin-left: 15px;
     padding: 10px 5px;
     max-width: 55px;
-} */
+} 
 
-/* .mob-cart-image {
+ .mob-cart-image {
     max-height: 100%;
     max-width: 100%;
     object-fit: contain;
-} */
+} 
 
-/* .mob-product-cart-info {
+ .mob-product-cart-info {
     width: 60%;
     margin-right: 15px;
     padding: 10px;
@@ -345,26 +444,26 @@ fieldset > input:focus{
     display: flex;
     flex-direction: column;
     align-items: center;
-} */
+}
 
 #cart-footer {
     position: fixed;
     bottom: 0;
 }
 
-/* .mob-cart-p {
+ .mob-cart-p {
     margin-top: 5px;
     font-size: 24px;
-} */
+} 
 
-/* .mob-cart-h4 {
+ .mob-cart-h4 {
     text-align: center;
-} */
+} 
 
-/* .mob-cart-p-shipping {
+ .mob-cart-p-shipping {
     font-size: 12px;
     color: #002855;
-} */
+} 
 
 .mob-cart-trash {
     margin-top: 15px;
@@ -375,14 +474,14 @@ fieldset > input:focus{
     font-size: 20px;
 }
 
-/* .mob-total-checkout {
+ .mob-total-checkout {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
-} */
+} 
 
-/* .mob-checkout-button {
+.mob-checkout-button {
     margin-top: 10px;
     color: #40A251;
     background-color: white;
@@ -397,13 +496,13 @@ fieldset > input:focus{
 .mob-checkout-button:hover {
     color: white;
     background-color: #40A251;
-} */
+}
 
 .mob-category-box-cart {
     color: white;
 }
 
-/* .mob-cart-delete-form-button {
+.mob-cart-delete-form-button {
     margin-top: 10px;
     color: #d13131;
     background-color: white;
@@ -418,7 +517,7 @@ fieldset > input:focus{
 .mob-cart-delete-form-button:hover {
     color: white;
     background-color: #d13131;
-} */
+}
 
 #delete_button {
     margin-top: 10px;
@@ -452,10 +551,10 @@ fieldset > input:focus{
     margin: 25px 0 20px 5%;
 }
 
-/* .mob-total-checkout-taxtotal {
+.mob-total-checkout-taxtotal {
     text-align: center;
     margin-bottom: 5px;
-} */
+}
 
 .dropdown-content-guitar {
     display: none;
@@ -511,6 +610,149 @@ fieldset > input:focus{
     .mob-all-pro-display { display: none; }
     .main-show { display: none; }
     .mob-total-checkout { display: none }
+
+    .body-box {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* background-image: url('https://wallpaperaccess.com/full/4160539.jpg'); */
+        background-color: rgba(88, 88, 88, 0.45);
+        /* background: linear-gradient(0.25turn, #000000, #020202, #8C3C05, #CC790A, #CC790A, #CC790A, #8C3C05, #020202, #000000); */
+    }
+
+    .dt-mid-three-display-box{
+        height: 300px;
+        width: 70%;
+        margin: 50px 15%;
+        display: flex;
+        justify-content: space-between;
+        max-height: 300px;
+        overflow: hidden;
+    }
+
+    .dt-mid-three-display-left{
+        width: 30%;
+        max-height: 100%;
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dt-mid-three-display-middle{
+        width: 30%;
+        max-height: 100%;
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dt-mid-three-display-right{
+        width: 30%;
+        max-height: 100%;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dt-mid-three-category{
+        width: 100%;
+        height: 30px;
+        background-color: #002855;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 5px;
+        max-height: 30px;
+        z-index: 1;
+    }
+
+    .dt-mid-three-title{
+        width: 100%;
+        background-color: #EAAA00;
+        height: 60px;
+        padding: 5px;
+    }
+
+    .dt-mid-three-title > a {
+        color: white;
+    }
+
+    .dt-mid-three-banner-left{
+        height: 100%;
+        background-image: url('https://www.nme.com/wp-content/uploads/2020/12/slash-2000x1270-1.jpg');
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .dt-mid-three-banner-middle{
+        height: 100%;
+        background-image: url('https://i.pinimg.com/736x/d9/a1/fa/d9a1fac5ca578b94ce3d7cdad39c18cd--les-paul-custom-gibson-les-paul.jpg');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
+    .dt-mid-three-banner-right {
+        height: 100%;
+        background-image: url('https://i.pinimg.com/originals/94/25/51/94255190a273771f37324aaedad4a92c.jpg');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
+    #category-box {
+        display: none;
+    }
+
+
+    .dt-top-display-banner {
+        background-color: rgba(83,83,83,.3);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .dt-top-display-h2 {
+        margin: 15px 15px;
+        color: white;
+        font-size: 40px;
+    }
+
+    .dt-top-display-a {
+        margin: 40px;
+        height: 40px;
+        width: 100px;
+        border-radius: 10px;
+        color: #002855;
+        background-color: rgba(255, 255, 255, .5);
+        border: 2px solid #002855;
+        transition: .3s ease-in-out; 
+        font-size: 18px;
+    }
+
+    .dt-top-display-a:hover {
+        color: #EAAA00;
+        background-color: #002855;
+        border: 1px solid #EAAA00;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+
+    .dt-top-display-box {
+        height: 350px;
+        width: 70%;
+        margin: 60px 0 20px 15%;
+        background-image: url('https://blog.sweelee.com/uploads/2021/05/5-Guitar-Myths-Debunked-Banner@1200x-1024x538.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+    }
 
     body {
         background-image: url('https://wallpaperaccess.com/full/4160539.jpg');
@@ -628,6 +870,26 @@ fieldset > input:focus{
         justify-content: flex-start;
     }
 
+    .landing-cat-bar {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        height: 4%;
+        background-color: #EAAA00;
+        border: 0;
+        margin: 15px 0 50px 15%;
+        border-top: #002855 solid 2px;
+        justify-content: flex-start;
+    }
+
+    .landing-cat-a {
+        padding: 5px;
+        margin-left: 5px;
+        text-decoration: none;
+        color: white;
+
+    }
+
     .dt-show-product-info-box {
         background-color: white;
         height: 600px;
@@ -672,14 +934,14 @@ fieldset > input:focus{
 
     }
 
-    /* .dt-cart-box {
+    .dt-cart-box {
         width: 70%;
         margin-left: 15%;
         background-color: white;
         display: flex;
         justify-content: center;
         margin-bottom: 100px;
-    } */
+    }
     
     .dt-main-show {
         margin-top: 90px;
@@ -688,14 +950,14 @@ fieldset > input:focus{
         flex-direction: column;
     }
 
-    /* .dt-all-pro-display {
+    .dt-all-pro-display {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-    } */
+    }
 
-    /* .dt-cart-display {
+    .dt-cart-display {
         height: 300px;
         display: flex;
         width: 100%;
@@ -715,9 +977,9 @@ fieldset > input:focus{
         max-width: 100%;
         object-fit: contain;
         height: 300px;
-    } */
+    }
 
-    /* .dt-product-cart-info {
+    .dt-product-cart-info {
         width: 60%;
         margin-right: 15px;
         padding: 10px;
@@ -740,9 +1002,9 @@ fieldset > input:focus{
     .dt-cart-p-shipping {
         font-size: 18px;
         color: #002855;
-    } */
+    }
 
-    /* .dt-cart-delete-form-button {
+    .dt-cart-delete-form-button {
         margin-top: 10px;
         color: #d13131;
         background-color: white;
@@ -758,9 +1020,9 @@ fieldset > input:focus{
         color: white;
         background-color: #d13131;
         cursor: pointer;
-    } */
+    }
 
-    /* .dt-total-checkout {
+    .dt-total-checkout {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -772,7 +1034,7 @@ fieldset > input:focus{
     .dt-total-checkout-taxtotal {
         text-align: center;
         margin-bottom: 12px;
-    } */
+    }
 
     .dt-cart-p-shipping {
         font-size: 14px;
@@ -801,17 +1063,17 @@ fieldset > input:focus{
         min-height: 100vh;
     }
 
-    /* .dt-total-checkout-h4 {
+    .dt-total-checkout-h4 {
         font-size: 15px;
-    } */
+    }
 
     .dt-total-checkout-taxtotal > h6 {
         font-size: 14px;
     }
 
-    /* #dt-total-checkout-top-h6 {
+    #dt-total-checkout-top-h6 {
         margin-top: 50px;
-    } */
+    }
     
     .dt-show-product-display-box {
         width: 70%;
@@ -858,22 +1120,22 @@ fieldset > input:focus{
         height: 70px;
     }
 
-    /* .dt-cart-p-shipping {
+    .dt-cart-p-shipping {
         font-size: 18px;
         color: #002855;
-    } */
+    }
 
     .dt-cart-p {
         margin-top: 5px;
         font-size: 34px;
     }
 
-    /* .dt-cart-p-shipping {
+    .dt-cart-p-shipping {
         font-size: 18px;
         color: #002855;
-    } */
+    }
 
-    /* .dt-checkout-button {
+    .dt-checkout-button {
         margin: 10px 0 20px;
         color: #40A251;
         background-color: white;
@@ -883,7 +1145,7 @@ fieldset > input:focus{
         border-radius: 10px;
         font-size: 18px;
         transition: .3s ease-in-out;
-    } */
+    }
 }
 
 @media only screen and (min-width: 1200px) {

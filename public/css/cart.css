@@ -2,6 +2,13 @@
 .landing-cat-bar { display: none }
 .dt-cart-box { display: none }
 
+.body-box {
+    display: flex;
+   justify-content: center;
+   flex-direction: column;
+   background-color: rgba(88, 88, 88, 0.45);
+}
+
 .mob-all-pro-display {
     display: flex;
     justify-content: center;
