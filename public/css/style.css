@@ -720,7 +720,7 @@ fieldset > input:focus{
     }
 
     .navbar {
-        min-height: 70px;
+        height: 85%;
     }
 
     .dt-top-display-banner {
