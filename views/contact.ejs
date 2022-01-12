@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<%- include('../partials/head.ejs') %>
-
+    <%- include('../partials/head.ejs') %>
+<body>
     <body>
         <div class="body-box">
             <div class="main">
@@ -14,11 +13,7 @@
                         <a class="landing-cat-a" href="/product_category/effects">Effects</a>
                     </div>
 
-
-
-
                     <div id="category-box" class="home-category-box">
-
 
                         <div class="dropdown-guitar">
 
@@ -46,57 +41,28 @@
 
                         </div>
 
-                    </div>
-
-                                 
-
-
-
-                    <ul class="mob-all-pro-display">
-                        <% products.forEach(pro=> { %>
-                            <div class="home-product-display">
-                                <div class="product-display-image">
-                                    <a class="home-image-a" href="/product_category/<%= pro._id %>"><img
-                                            src="<%= pro.image %>" class="display-image"></a>
-                                </div>
-                                <div class="product-display-info">
-                                    <p><a class="home-name-a" href="/product_category/<%= pro._id %>">
-                                            <%= pro.brand %>
-                                                <%= pro.model %>
-                                        </a><br>
-                                        <%= pro.color %><br>
-                                            $<%= pro.price %>.99<br>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="home-product-price"></div>
-                            <% }) %>
+                    </div>                                
+                    <ul class="mob-all-pro-display">                                                           
                     </ul>
-
-                    <div class="dt-all-pro-display-wrap">
-                            <% products.forEach(pro=> { %>
-                                <a href="/product_category/<%= pro._id %>">
-                                    <div class="dt-each-pro-box">
-                                    
-                                        <div class="dt-each-pro-contents-img">
-                                        <img class="dt-display-image" src="<%= pro.image %>">
-                                        </div>
-                                        <div class="dt-each-pro-contents-p">
-                                        <p class="dt-each-pro-contents-p"><a class="dt-home-name-a" href="/product_category/<%= pro._id %>">
-                                            <%= pro.brand %>
-                                                <%= pro.model %>
-                                        </a><br>
-                                            $<%= pro.price %>.99<br>
-                                    </p>
-                                   
-                                    
-                                    </div>
-                                </div></a>
-                            <% }) %> 
+                    <div class="dt-all-pro-display-wrap">                
                     </div>
+            </div>
 
+            <div class="mob-contact">
+                <h1 class="mob-contact-h1">Contact Info</h1>
+                <br>
+                <h4 class="mob-contact-h4">I really hope you're enjoying the page! If you have any questions, comments, or suggestions, please feel free to reach out to me, I'd love to hear from you!</h4>
+                <br>
+                <ul>
+                    <li class="mob-contact-li">
+                        <a class="mob-contact-github" href="https://github.com/jwsmith2340" target="_blank">
+                            <div class="i"><i class="fa fa-github-square"></i></div><div class="gitp"><p>GitHub</p></div></a></li>
 
-
+                    <li class="mob-contact-li">
+                        <a class="mob-contact-github" href="https://www.linkedin.com/in/jwsmith2340/" target="_blank">
+                            <div class="i"><i class="fa fa-linkedin-square"></i></div><div class="gitp"><p>LinkedIn</p></div></a></li>
+                </ul>
+                
             </div>
 
             <footer>
@@ -114,5 +80,5 @@
             </footer>
         </div>
     </body>
-
+</body>
 </html>

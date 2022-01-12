@@ -51,6 +51,10 @@ productsRouter.get('/effects', (req, res) => {
     })
 })
 
+productsRouter.get('/contact', (req, res) => {
+    res.render('contact.ejs')
+})
+
 //new
 productsRouter.get(`/${ADMINSECRET}/new`, (req, res) => {
     res.render('admin/new.ejs')
