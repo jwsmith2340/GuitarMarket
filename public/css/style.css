@@ -82,13 +82,6 @@ img {
     color: #002855
 }
 
-.mob-all-pro-display {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
 .home-product-display {
     height: 150px;
     display: flex;
@@ -312,7 +305,7 @@ fieldset > input:focus{
     align-items: center;
 }
 
-.mob-cart-display {
+/* .mob-cart-display {
     height: 150px;
     display: flex;
     width: 90%;
@@ -320,7 +313,7 @@ fieldset > input:focus{
     border-top: 1.7px black solid;
     border-bottom: 1px black solid;
     justify-content: space-around;
-}
+} */
 
 .home-product-display {
     height: 150px;
@@ -332,19 +325,19 @@ fieldset > input:focus{
     justify-content: space-around;
 }
 
-.mob-cart-display-image {
+/* .mob-cart-display-image {
     margin-left: 15px;
     padding: 10px 5px;
     max-width: 55px;
-}
+} */
 
-.mob-cart-image {
+/* .mob-cart-image {
     max-height: 100%;
     max-width: 100%;
     object-fit: contain;
-}
+} */
 
-.mob-product-cart-info {
+/* .mob-product-cart-info {
     width: 60%;
     margin-right: 15px;
     padding: 10px;
@@ -352,26 +345,26 @@ fieldset > input:focus{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 #cart-footer {
     position: fixed;
     bottom: 0;
 }
 
-.mob-cart-p {
+/* .mob-cart-p {
     margin-top: 5px;
     font-size: 24px;
-}
+} */
 
-.mob-cart-h4 {
+/* .mob-cart-h4 {
     text-align: center;
-}
+} */
 
-.mob-cart-p-shipping {
+/* .mob-cart-p-shipping {
     font-size: 12px;
     color: #002855;
-}
+} */
 
 .mob-cart-trash {
     margin-top: 15px;
@@ -382,14 +375,14 @@ fieldset > input:focus{
     font-size: 20px;
 }
 
-.mob-total-checkout {
+/* .mob-total-checkout {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
-}
+} */
 
-.mob-checkout-button {
+/* .mob-checkout-button {
     margin-top: 10px;
     color: #40A251;
     background-color: white;
@@ -404,13 +397,13 @@ fieldset > input:focus{
 .mob-checkout-button:hover {
     color: white;
     background-color: #40A251;
-}
+} */
 
 .mob-category-box-cart {
     color: white;
 }
 
-.mob-cart-delete-form-button {
+/* .mob-cart-delete-form-button {
     margin-top: 10px;
     color: #d13131;
     background-color: white;
@@ -425,7 +418,7 @@ fieldset > input:focus{
 .mob-cart-delete-form-button:hover {
     color: white;
     background-color: #d13131;
-}
+} */
 
 #delete_button {
     margin-top: 10px;
@@ -459,10 +452,10 @@ fieldset > input:focus{
     margin: 25px 0 20px 5%;
 }
 
-.mob-total-checkout-taxtotal {
+/* .mob-total-checkout-taxtotal {
     text-align: center;
     margin-bottom: 5px;
-}
+} */
 
 .dropdown-content-guitar {
     display: none;
@@ -520,7 +513,6 @@ fieldset > input:focus{
     .mob-total-checkout { display: none }
 
     body {
-        /* background-image: url('https://www.desktopbackground.org/p/2015/07/03/973755_wood-planks-pdf-woodworking_1280x853_h.jpg'); */
         background-image: url('https://wallpaperaccess.com/full/4160539.jpg');
         background-size: auto;
         background-repeat: none;
@@ -680,14 +672,14 @@ fieldset > input:focus{
 
     }
 
-    .dt-cart-box {
+    /* .dt-cart-box {
         width: 70%;
         margin-left: 15%;
         background-color: white;
         display: flex;
         justify-content: center;
         margin-bottom: 100px;
-    }
+    } */
     
     .dt-main-show {
         margin-top: 90px;
@@ -696,14 +688,14 @@ fieldset > input:focus{
         flex-direction: column;
     }
 
-    .dt-all-pro-display {
+    /* .dt-all-pro-display {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-    }
+    } */
 
-    .dt-cart-display {
+    /* .dt-cart-display {
         height: 300px;
         display: flex;
         width: 100%;
@@ -723,9 +715,9 @@ fieldset > input:focus{
         max-width: 100%;
         object-fit: contain;
         height: 300px;
-    }
+    } */
 
-    .dt-product-cart-info {
+    /* .dt-product-cart-info {
         width: 60%;
         margin-right: 15px;
         padding: 10px;
@@ -748,9 +740,9 @@ fieldset > input:focus{
     .dt-cart-p-shipping {
         font-size: 18px;
         color: #002855;
-    }
+    } */
 
-    .dt-cart-delete-form-button {
+    /* .dt-cart-delete-form-button {
         margin-top: 10px;
         color: #d13131;
         background-color: white;
@@ -766,9 +758,9 @@ fieldset > input:focus{
         color: white;
         background-color: #d13131;
         cursor: pointer;
-    }
+    } */
 
-    .dt-total-checkout {
+    /* .dt-total-checkout {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -780,7 +772,7 @@ fieldset > input:focus{
     .dt-total-checkout-taxtotal {
         text-align: center;
         margin-bottom: 12px;
-    }
+    } */
 
     .dt-cart-p-shipping {
         font-size: 14px;
@@ -809,17 +801,17 @@ fieldset > input:focus{
         min-height: 100vh;
     }
 
-    .dt-total-checkout-h4 {
+    /* .dt-total-checkout-h4 {
         font-size: 15px;
-    }
+    } */
 
     .dt-total-checkout-taxtotal > h6 {
         font-size: 14px;
     }
 
-    #dt-total-checkout-top-h6 {
+    /* #dt-total-checkout-top-h6 {
         margin-top: 50px;
-    }
+    } */
     
     .dt-show-product-display-box {
         width: 70%;
@@ -866,22 +858,22 @@ fieldset > input:focus{
         height: 70px;
     }
 
-    .dt-cart-p-shipping {
+    /* .dt-cart-p-shipping {
         font-size: 18px;
         color: #002855;
-    }
+    } */
 
     .dt-cart-p {
         margin-top: 5px;
         font-size: 34px;
     }
 
-    .dt-cart-p-shipping {
+    /* .dt-cart-p-shipping {
         font-size: 18px;
         color: #002855;
-    }
+    } */
 
-    .dt-checkout-button {
+    /* .dt-checkout-button {
         margin: 10px 0 20px;
         color: #40A251;
         background-color: white;
@@ -891,7 +883,7 @@ fieldset > input:focus{
         border-radius: 10px;
         font-size: 18px;
         transition: .3s ease-in-out;
-    }
+    } */
 }
 
 @media only screen and (min-width: 1200px) {
