@@ -43,7 +43,7 @@ app.use(methodOverride('_method'))
 
 //Controller route
 app.use('/product_category', productsController)
-app.use('/users', usersController)
+// app.use('/users', usersController)
 app.use('/cart', cartController)
 app.get('/', (req, res) => {
     res.render('index.ejs')
