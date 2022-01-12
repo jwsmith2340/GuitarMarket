@@ -2,7 +2,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const productsController = require('./controllers/products')
-// const usersController = require('./controllers/users')
+const usersController = require('./controllers/users')
 const cartController = require('./controllers/cart')
 const morgan = require('morgan')
 const expressSession = require('express-session')
@@ -28,22 +28,22 @@ db.on('error', (err) => console.log('Error: ', err))
 //mount middleware
 app.use(morgan('dev'))
 app.use(express.urlencoded({extended: false}))
-// app.use(expressSession({
-//     secret: SECRET,
-//     resave: false, 
-//     saveUninitialized: false
-// }))
+app.use(expressSession({
+    secret: SECRET,
+    resave: false, 
+    saveUninitialized: false
+}))
 app.use(express.static('public'))
 app.use(methodOverride('_method'))
-// app.use(function(req, res, next) {
-//     console.log('Session Store:', req.session)
-//     next()
-// })
-//^^custom middleware that lets us log the session to the console
+app.use(function(req, res, next) {
+    console.log('Session Store:', req.session)
+    next()
+})
+// ^^custom middleware that lets us log the session to the console
 
 //Controller route
 app.use('/product_category', productsController)
-// app.use('/users', usersController)
+app.use('/users', usersController)
 app.use('/cart', cartController)
 app.get('/', (req, res) => {
     res.render('index.ejs')

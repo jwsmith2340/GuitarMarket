@@ -907,22 +907,21 @@ fieldset > input:focus{
 
 
 
-    .dt-show-product-display-box {
+    /* .dt-show-product-display-box {
         width: 70%;
         height: 70%;
         margin-left: 15%;
         display: flex;
         padding-bottom: 160px;
-        
-    }
+    } */
 
-    .dt-show-product-image-box {
+    /* .dt-show-product-image-box {
         background-color: white;
         height: 600px;
         width: 40%;
         display: flex;
         justify-content: center;
-    }
+    } */
 
     .dt-show-product-info-box {
         background-color: white;
@@ -935,10 +934,10 @@ fieldset > input:focus{
 
     }
 
-    .dt-show-product-image {
+    /* .dt-show-product-image {
         height: 600px;
         padding: 20px;
-    }
+    } */
 
     .dt-show-product-info-h2 {
         padding: 10px;
@@ -1114,6 +1113,30 @@ fieldset > input:focus{
         margin-top: 50px;
     }
     
+    .dt-show-product-display-box {
+        width: 70%;
+        height: 70%;
+        margin-left: 15%;
+        display: flex;
+        padding-bottom: 160px;
+    }
+
+    .dt-show-product-image-box {
+        background-color: white;
+        height: 600px;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .dt-show-product-image {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        object-fit: contain;
+    }
+
 }
 
 @media only screen and (min-width: 1020px) {
@@ -1161,8 +1184,6 @@ fieldset > input:focus{
         font-size: 18px;
         transition: .3s ease-in-out;
     }
-
-
 }
 
 @media only screen and (min-width: 1200px) {
