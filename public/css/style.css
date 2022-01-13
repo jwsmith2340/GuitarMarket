@@ -6,108 +6,94 @@
 .dt-all-pro-display-wrap { display: none; }
 .dt-cart-box { display: none }
 
+/*******************************************
+        GLOBAL ELEMENTS - MOBILE - START
+*******************************************/
 
-
-
-
-.category-box-products {
-    margin: 0 5px;
-}   
-
-.category-box-products-index {
-    margin: 5px;
+.main {
+    margin-top: 90px;
 }
 
-.category-box-a {
-    text-decoration: none;
-    color: #002855;
+#category-box {
+    background: #EAAA00;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
 }
 
 .category-box-login {
     margin-right: 5px;
 }
 
-
-
-.mob-contact {
-    height: 80vh;
-    width: 70%;
-    margin-left: 15%;
+.footer-box {
+    width: 90%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 0;
 }
 
-.mob-contact-h1 {
-margin-top: 120px;
-}
-
-.mob-contact-h1 {
-
-}
-
-.mob-contact-li {
-    list-style-type: none;
-}
-
-.mob-contact-github {
-    font-size: 30px;
+.footer-a {
     text-decoration: none;
-    display: flex;
-    width: 160px;
-    color: #002855; 
-}
-
-.gitp {
-    margin-left: 15px;
-}
-
-.mob-contact-h4 {
-    text-align: start;
-    text-indent: 10%;
-    padding: 15px;
-    margin: 0 20px;
-    max-width: 350px;
-}
-
-.category-links {
-    background-color: rgba(83,83,83,.4);
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    padding: 10px 20px;
     color: white;
+}
+
+#copyright {
+    color: white;
+}
+
+.mob-all-pro-display {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.category-links-h2 {
-    padding: 3px;
-    font-size: 32px;
+.category-box-products {
+    margin: 0 5px;
+} 
+
+.category-box-a {
+    text-decoration: none;
+    color: #002855;
 }
 
-.category-links-button {
-        margin-top: 10px;
-        color: white;
-        background-color: rgba(1,1,1,0);
-        border: 1px solid white;
-        width: 150px;
-        height: 33px;
-        border-radius: 10px;
-        font-size: 18px;
-        transition: .3s ease-in-out;
+/*******************************************
+        GLOBAL ELEMENTS - MOBILE - END
+*******************************************/
+
+
+/*******************************************
+        INDEX PAGE - MOBILE - START
+*******************************************/
+
+.category-box-products-index {
+    margin: 5px;
 }
 
-.category-links-button:hover {
-    color: #EAAA00;
-    background-color: #002855;
-    border: 1px solid #EAAA00;
-}   
+#landing-welcome-box {
+    background-image: url('https://wallpaperaccess.com/full/4160539.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin-top: -9px;
+    margin-bottom: 10px;
+}
 
-
+#landing-welcome-shade {
+    background-color: rgba(83,83,83,.2);
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    height: 100%;
+}
 
 .category-main-box {
     display: flex;
@@ -149,25 +135,216 @@ margin-top: 120px;
     height: 110px;
 }
 
-
-#landing-welcome-box {
-    background-image: url('https://wallpaperaccess.com/full/4160539.jpg');
-    background-position: center;
-    background-size: cover;
-    height: 200px;
-    margin-top: -9px;
-    margin-bottom: 10px;
+.category-links {
+    background-color: rgba(83,83,83,.4);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-#landing-welcome-shade {
-    background-color: rgba(83,83,83,.2);
+.category-links-h2 {
+    padding: 3px;
+    font-size: 32px;
+}
+
+.category-links-button {
+        margin-top: 10px;
+        color: white;
+        background-color: rgba(1,1,1,0);
+        border: 1px solid white;
+        width: 150px;
+        height: 33px;
+        border-radius: 10px;
+        font-size: 18px;
+        transition: .3s ease-in-out;
+}
+
+.category-links-button:hover {
+    color: #EAAA00;
+    background-color: #002855;
+    border: 1px solid #EAAA00;
+}   
+
+.category-main-box-spaceeater {
+    height: 53px;
+}
+
+/*******************************************
+        INDEX PAGE - MOBILE - END
+*******************************************/
+
+/*******************************************
+        HOME PAGE - MOBILE - START
+*******************************************/
+
+.mob-all-pro-display-box-a {
+    width: 90%;
+    margin: 7px 0;
+    text-decoration: none;
+    color: black;   
+}
+
+.home-product-display {
+    height: 100%;
     display: flex;
-    flex-direction: column;    
+    width: 100%;
+    justify-content: space-around;
+}
+
+.product-display-image {
+    margin-left: 15px;
+    padding: 10px 5px;
+    max-width: 55px;
+}
+
+.display-image {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.product-display-info {
+    width: 60%;
+    margin-right: 15px;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*******************************************
+        HOME PAGE - MOBILE - END
+*******************************************/
+
+/*******************************************
+        SHOW PAGE - MOBILE - START
+*******************************************/
+
+.main-show {
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+#mob-show-category-box {
+    position: absolute;
+    width: 100%;
+    background: #EAAA00;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    display: flex;
+    height: 30px;
+    align-items: center;
+}
+
+.show-product-display {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 7px 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product-show-image {
+    margin-left: 15px;
+    padding: 10px 0;
+    max-width: 260px;
+    max-height: 550px;
+}
+
+.show-image {
+    max-height: 550px;
+    max-width: 220px;
+    height: 100%;
+    padding: 40px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.product-show-info {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-size: 18px;
-    height: 100%;
+    margin-bottom: 15px;
+}
+
+.product-info-description {
+    font-size: 22px;
+}
+
+.product-info-price {
+    font-size: 28px;
+}
+
+
+/*******************************************
+        SHOW PAGE - MOBILE - END
+*******************************************/
+
+
+
+
+
+
+
+
+  
+
+.category-box-products-index {
+    margin: 5px;
+}
+
+.mob-contact {
+    height: 80vh;
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mob-contact-h1 {
+margin-top: 120px;
+}
+
+.mob-contact-h1 {
+
+}
+
+.mob-contact-li {
+    list-style-type: none;
+}
+
+.mob-contact-github {
+    font-size: 30px;
+    text-decoration: none;
+    display: flex;
+    width: 160px;
+    color: #002855; 
+}
+
+.gitp {
+    margin-left: 15px;
+}
+
+.mob-contact-h4 {
+    text-align: start;
+    text-indent: 10%;
+    padding: 15px;
+    margin: 0 20px;
+    max-width: 350px;
 }
 
 .photoeater {
@@ -228,9 +405,7 @@ img {
     font-size: 17px;
 }
 
-.main {
-    margin-top: 90px;
-}
+
 
 .login-signup-box {
     height: 77vh;
@@ -268,15 +443,7 @@ img {
     margin: 2px 11px;
 }
 
-#category-box {
-    background: #EAAA00;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 30px;
-}
+
 
 #login-category-box {
     background: #EAAA00;
@@ -307,47 +474,6 @@ img {
     color: #002855
 }
 
-.home-product-display {
-    height: 100%;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.mob-all-pro-display-box-a {
-    width: 90%;
-    margin: 7px 0;
-    text-decoration: none;
-    color: black;
-    
-}
-
-.product-display-image {
-    margin-left: 15px;
-    padding: 10px 5px;
-    max-width: 55px;
-}
-
-.category-main-box-spaceeater {
-    height: 53px;
-}
-
-.product-display-info {
-    width: 60%;
-    margin-right: 15px;
-    padding: 10px;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.display-image {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-}
-
 .home-name-a {
     text-decoration: none;
     color: black;
@@ -366,20 +492,6 @@ footer {
     justify-content: center;
 }
 
-.footer-a {
-    text-decoration: none;
-    color: white;
-}
-
-.footer-box {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    margin: 0;
-}
-
 .mob-show-footer-box {
     width: 90%;
     display: flex;
@@ -387,11 +499,6 @@ footer {
     justify-content: space-between;
     padding: 5px;
     margin: 0;
-}
-
-#copyright {
-    color: white;
-   
 }
 
 .nav-logo {
@@ -415,56 +522,6 @@ footer {
 #logo-img-div {
    display: flex;
    flex-direction: row;
-}
-
-.show-product-display {
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 7px 0;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.product-show-image {
-    margin-left: 15px;
-    padding: 10px 0;
-    max-width: 260px;
-    max-height: 550px;
-}
-
-.product-show-info {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.show-image {
-    max-height: 550px;
-    max-width: 220px;
-    height: 100%;
-    padding: 40px;
-    border-radius: 5px;
-    margin-right: 8px;
-    
-}
-
-.product-info-description {
-    font-size: 22px;
-}
-
-.main-show {
-    margin-top: 90px;
-    display: flex;
-    justify-content: center;
-}
-
-.product-info-price {
-    font-size: 28px;
 }
 
 #show-add-cart {
@@ -542,12 +599,7 @@ fieldset > input:focus{
     background-color: white;
 }
 
-.mob-all-pro-display {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 .mob-cart-display {
     height: 150px;
@@ -733,16 +785,7 @@ fieldset > input:focus{
     text-decoration: none;
 }
 
-#mob-show-category-box {
-    position: absolute;
-    width: 100%;
-    background: #EAAA00;
-    margin-bottom: 5px;
-    justify-content: space-between;
-    display: flex;
-    height: 30px;
-    align-items: center;
-}
+
 
 #dt-show-footer-fixed {
     bottom: 0;
@@ -757,15 +800,281 @@ fieldset > input:focus{
     .main-show { display: none; }
     .mob-total-checkout { display: none }
     #login-category-box { display: none }
+    #category-box { display: none; }
+    button:hover { cursor: pointer; }
 
-    .body-box {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        /* background-image: url('https://wallpaperaccess.com/full/4160539.jpg'); */
-        background-color: rgba(88, 88, 88, 0.45);
-        /* background: linear-gradient(0.25turn, #000000, #020202, #8C3C05, #CC790A, #CC790A, #CC790A, #8C3C05, #020202, #000000); */
-    }
+
+/*******************************************
+        GLOBAL ELEMENTS - DESKTOP - START
+*******************************************/
+
+.body-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(88, 88, 88, 0.45);
+}
+
+.landing-cat-bar {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    height: 4%;
+    background-color: #EAAA00;
+    border: 0;
+    margin: 15px 0 50px 15%;
+    border-top: #002855 solid 2px;
+    justify-content: space-between;
+}
+
+.landing-cat-bar-products {
+    padding: 5px; 
+    margin-left: 5px;
+}
+
+.landing-cat-a {
+    padding: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: #002855;
+}
+
+.landing-cat-bar-login {
+    margin-right: 5px;
+}
+
+
+
+footer {
+    height: 50px;
+    background-color: #002855;
+    width: 70%;
+    bottom: 0;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+}
+
+.main {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+/*******************************************
+        GLOBAL ELEMENTS - DESKTOP - END
+*******************************************/
+
+/*******************************************
+        INDEX PAGE - DESKTOP - START
+*******************************************/
+
+.dt-top-display-box {
+    height: 350px;
+    width: 70%;
+    margin: 60px 0 20px 15%;
+    background-image: url('https://blog.sweelee.com/uploads/2021/05/5-Guitar-Myths-Debunked-Banner@1200x-1024x538.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+.dt-top-display-banner {
+    background-color: rgba(83,83,83,.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dt-top-display-h2 {
+    margin: 15px 15px;
+    color: white;
+    font-size: 40px;
+}
+
+.dt-top-display-a {
+    margin: 40px;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    color: #002855;
+    background-color: rgba(255, 255, 255, .5);
+    border: 2px solid #002855;
+    transition: .3s ease-in-out; 
+    font-size: 18px;
+}
+
+.dt-top-display-a:hover {
+    color: #EAAA00;
+    background-color: #002855;
+    border: 1px solid #EAAA00;
+}
+
+.dt-mid-three-display-box{
+    height: 300px;
+    width: 70%;
+    margin: 50px 15%;
+    display: flex;
+    justify-content: space-between;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.dt-mid-three-display-left{
+    width: 30%;
+    max-height: 100%;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+}
+
+.dt-mid-three-category{
+    width: 100%;
+    height: 30px;
+    background-color: #002855;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+    max-height: 30px;
+    z-index: 1;
+}
+
+.dt-mid-three-title{
+    width: 100%;
+    background-color: #EAAA00;
+    height: 60px;
+    padding: 5px;
+}
+
+.dt-mid-three-title > a {
+    color: white;
+}
+
+.dt-mid-three-banner-left{
+    height: 100%;
+    background-image: url('https://www.nme.com/wp-content/uploads/2020/12/slash-2000x1270-1.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.dt-mid-three-display-middle{
+    width: 30%;
+    max-height: 100%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+}
+
+.dt-mid-three-banner-middle{
+    height: 100%;
+    background-image: url('https://i.pinimg.com/736x/d9/a1/fa/d9a1fac5ca578b94ce3d7cdad39c18cd--les-paul-custom-gibson-les-paul.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.dt-mid-three-display-right{
+    width: 30%;
+    max-height: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.dt-mid-three-banner-right {
+    height: 100%;
+    background-image: url('https://i.pinimg.com/originals/94/25/51/94255190a273771f37324aaedad4a92c.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+/*******************************************
+        INDEX PAGE - DESKTOP - END
+*******************************************/
+
+/*******************************************
+        HOME PAGE - DESKTOP - START
+*******************************************/
+
+.dt-all-pro-display-wrap {
+    width: 70%;
+    margin: 30px 15%;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dt-each-pro-box {
+    height: 450px;
+    width: 25%;
+    background-color: rgba(255, 255, 255, .0);
+    border: 2px solid transparent;
+    margin:0;
+    transition: .1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dt-each-pro-contents-img {
+    height: 340px;
+}
+
+.dt-display-image {
+    padding: 5px;
+    max-height: 90%;
+    max-width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.dt-each-pro-contents-p {
+    text-align: center;
+    font-size: 20px;
+    height: 70px;
+}
+
+.dt-each-pro-box:hover {
+    border: rgba(88, 88, 88, 0.45) solid 2px;
+}
+
+.dt-home-name-a {
+    color: black;
+    text-decoration: none;
+}
+
+/*******************************************
+        HOME PAGE - DESKTOP - END
+*******************************************/   
+
+/*******************************************
+        SHOW PAGE - DESKTOP - START
+*******************************************/
+
+/*******************************************
+        SHOW PAGE - DESKTOP - END
+*******************************************/
+
+
+
+
+
+
+
+
+
+
 
     .login-signup-box {
         width: 70%;
@@ -780,15 +1089,7 @@ fieldset > input:focus{
         margin-top: 40px;
     }
 
-    .dt-mid-three-display-box{
-        height: 300px;
-        width: 70%;
-        margin: 50px 15%;
-        display: flex;
-        justify-content: space-between;
-        max-height: 300px;
-        overflow: hidden;
-    }
+    
 
     .body-box-login {
         height: 100vh;
@@ -800,129 +1101,25 @@ fieldset > input:focus{
         /* background: linear-gradient(0.25turn, #000000, #020202, #8C3C05, #CC790A, #CC790A, #CC790A, #8C3C05, #020202, #000000); */
     }
 
-    .dt-mid-three-display-left{
-        width: 30%;
-        max-height: 100%;
-        background-color: blue;
-        display: flex;
-        flex-direction: column;
-    }
+    
 
-    .dt-mid-three-display-middle{
-        width: 30%;
-        max-height: 100%;
-        background-color: yellow;
-        display: flex;
-        flex-direction: column;
-    }
+   
 
-    .dt-mid-three-display-right{
-        width: 30%;
-        max-height: 100%;
-        background-color: red;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .dt-mid-three-category{
-        width: 100%;
-        height: 30px;
-        background-color: #002855;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        padding: 5px;
-        max-height: 30px;
-        z-index: 1;
-    }
-
-    .dt-mid-three-title{
-        width: 100%;
-        background-color: #EAAA00;
-        height: 60px;
-        padding: 5px;
-    }
-
-    .dt-mid-three-title > a {
-        color: white;
-    }
-
-    .dt-mid-three-banner-left{
-        height: 100%;
-        background-image: url('https://www.nme.com/wp-content/uploads/2020/12/slash-2000x1270-1.jpg');
-        background-size: cover;
-        background-position: bottom;
-    }
-
-    .dt-mid-three-banner-middle{
-        height: 100%;
-        background-image: url('https://i.pinimg.com/736x/d9/a1/fa/d9a1fac5ca578b94ce3d7cdad39c18cd--les-paul-custom-gibson-les-paul.jpg');
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-    }
-
-    .dt-mid-three-banner-right {
-        height: 100%;
-        background-image: url('https://i.pinimg.com/originals/94/25/51/94255190a273771f37324aaedad4a92c.jpg');
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-    }
+    
 
     #category-box {
         display: none;
     }
 
 
-    .dt-top-display-banner {
-        background-color: rgba(83,83,83,.3);
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .dt-top-display-h2 {
-        margin: 15px 15px;
-        color: white;
-        font-size: 40px;
-    }
-
-    .dt-top-display-a {
-        margin: 40px;
-        height: 40px;
-        width: 100px;
-        border-radius: 10px;
-        color: #002855;
-        background-color: rgba(255, 255, 255, .5);
-        border: 2px solid #002855;
-        transition: .3s ease-in-out; 
-        font-size: 18px;
-    }
-
-    .dt-top-display-a:hover {
-        color: #EAAA00;
-        background-color: #002855;
-        border: 1px solid #EAAA00;
-    }
+    
 
     button:hover {
         cursor: pointer;
     }
 
 
-    .dt-top-display-box {
-        height: 350px;
-        width: 70%;
-        margin: 60px 0 20px 15%;
-        background-image: url('https://blog.sweelee.com/uploads/2021/05/5-Guitar-Myths-Debunked-Banner@1200x-1024x538.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: block;
-    }
+    
 
     body {
         background-image: url('https://wallpaperaccess.com/full/4160539.jpg');
@@ -951,26 +1148,9 @@ fieldset > input:focus{
         display: none;
     }
 
-    footer {
-        height: 50px;
-        background-color: #002855;
-        width: 70%;
-        bottom: 0;
-        position: relative;
-        margin-top: 40px;
-        margin-bottom: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 15%;
-    }
+    
 
-    .main {
-        margin-top: 90px;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
+    
 
     .navbar {
         height: 85%;
@@ -980,53 +1160,7 @@ fieldset > input:focus{
         display: none;
     }
 
-    .dt-all-pro-display-wrap {
-        width: 70%;
-        margin: 30px 15%;
-        background-color: rgba(255, 255, 255, 1);
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .dt-each-pro-box {
-        height: 450px;
-        width: 25%;
-        background-color: rgba(255, 255, 255, .0);
-        border: 2px solid transparent;
-        margin:0;
-        transition: .1s;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .dt-each-pro-contents-img {
-        height: 340px;
-    }
-
-    .dt-display-image {
-        padding: 5px;
-        max-height: 90%;
-        max-width: 90%;
-        height: 90%;
-        object-fit: contain;
-    }
-
-    .dt-each-pro-contents-p {
-        text-align: center;
-        font-size: 20px;
-        height: 70px;
-    }
-
-    .dt-each-pro-box:hover {
-        border: rgba(88, 88, 88, 0.45) solid 2px;
-    }
-
-    .dt-home-name-a {
-        color: black;
-        text-decoration: none;
-    }
+    
 
     .dt-show-landing-cat-bar {
         width: 70%;
@@ -1040,17 +1174,7 @@ fieldset > input:focus{
         justify-content: space-between;
     }
 
-    .landing-cat-bar {
-        width: 70%;
-        display: flex;
-        align-items: center;
-        height: 4%;
-        background-color: #EAAA00;
-        border: 0;
-        margin: 15px 0 50px 15%;
-        border-top: #002855 solid 2px;
-        justify-content: space-between;
-    }
+    
 
     .landing-cat-bar-login-box {
         width: 70%;
@@ -1065,21 +1189,11 @@ fieldset > input:focus{
         padding: .5px;
     }
 
-    .landing-cat-a {
-        padding: 5px;
-        margin-left: 5px;
-        text-decoration: none;
-        color: #002855;
-    }
+    
 
-    .landing-cat-bar-products {
-        padding: 5px; 
-        margin-left: 5px;
-    }
+  
 
-    .landing-cat-bar-login {
-        margin-right: 5px;
-    }
+    
 
     .dt-show-product-info-box {
         background-color: white;
