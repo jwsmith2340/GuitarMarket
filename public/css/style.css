@@ -379,6 +379,15 @@ footer {
     margin: 0;
 }
 
+.mob-show-footer-box {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 0;
+}
+
 #copyright {
     color: white;
    
@@ -437,10 +446,10 @@ footer {
     max-height: 550px;
     max-width: 220px;
     height: 100%;
-    max-height: 50%;
     padding: 40px;
     border-radius: 5px;
     margin-right: 8px;
+    
 }
 
 .product-info-description {
