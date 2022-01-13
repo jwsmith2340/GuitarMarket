@@ -69,8 +69,11 @@ usersRouter.get('/cart', auth.isAuthenticated, (req, res) => {
 
 
 usersRouter.delete('/:id/cart', auth.isAuthenticated, (req, res) => {
-    User.findByIdAndDelete(req.params.id, (err, resource) => {
-        res.redirect('/')
+    User.findById(req.user._id, (err, user) => {
+        user.cart.pull(req.params.id)
+        user.save((err) => {
+            res.redirect('/users/cart')
+        })
     })
 })
 
