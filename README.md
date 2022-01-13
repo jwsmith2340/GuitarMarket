@@ -24,6 +24,7 @@ The site focuses heavily on CSS styling elements to provide a smooth UI and an e
 ---
 
 ### Screenshots
+
 **Landing Page - Desktop**
 [![Screen-Shot-2022-01-12-at-11-17-58-PM.png](https://i.postimg.cc/fRdS95nD/Screen-Shot-2022-01-12-at-11-17-58-PM.png)](https://postimg.cc/k2n5rQgp)
 
