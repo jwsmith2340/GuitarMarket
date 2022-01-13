@@ -15,15 +15,15 @@
                             <a class="landing-cat-a" href="/product_category/effects">Effects</a>
                             </div>
                             <div class="landing-cat-bar-login">
-                                <a href="/users" class="landing-cat-a">Account</a>
+                                <% if(user) { %>
+                                    <a href="/users/logout" class="category-box-a">Logout</a>
+                                <% } else { %>
+                                    <a href="/users/login" class="category-box-a">Login/Signup</a>
+                                    <% } %>
                             </div>
                     </div>
 
-
-
-
                     <div id="category-box" class="home-category-box">
-
                         <div class="category-box-products">
                             <a class="category-box-a" href="/product_category/guitar">Guitars</a>
                             <a class="category-box-a" href="/product_category/bass">Basses</a>
@@ -36,7 +36,6 @@
                                     <a href="/users/login" class="category-box-a">Login/Signup</a>
                                     <% } %>
                             </div>
-
                     </div>
 
                                  
@@ -45,23 +44,25 @@
 
                     <ul class="mob-all-pro-display">
                         <% products.forEach(pro=> { %>
-                            <div class="home-product-display">
+                            <a class="mob-all-pro-display-box-a" href="/product_category/<%= pro._id %>">
+                                <div class="home-product-display">
                                 <div class="product-display-image">
-                                    <a class="home-image-a" href="/product_category/<%= pro._id %>"><img
-                                            src="<%= pro.image %>" class="display-image"></a>
+                                    <span class="home-image-a"><img
+                                            src="<%= pro.image %>" class="display-image"></span>
                                 </div>
                                 <div class="product-display-info">
-                                    <p><a class="home-name-a" href="/product_category/<%= pro._id %>">
+                                    <p><span class="home-image-a">
                                             <%= pro.brand %>
                                                 <%= pro.model %>
-                                        </a><br>
+                                    </span><br>
                                         <%= pro.color %><br>
                                             $<%= pro.price %>.99<br>
                                     </p>
                                 </div>
                             </div>
-                            <div class="home-product-price"></div>
+                            </a>
                             <% }) %>
+
                     </ul>
 
                     <div class="dt-all-pro-display-wrap">

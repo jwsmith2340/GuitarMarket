@@ -69,7 +69,11 @@
                     <a class="landing-cat-a" href="/product_category/effects">Effects</a>
                     </div>
                     <div class="landing-cat-bar-login">
-                        <a href="/users" class="landing-cat-a">Account</a>
+                        <% if(user) { %>
+                            <a href="/users/logout" class="category-box-a">Logout</a>
+                        <% } else { %>
+                            <a href="/users/login" class="category-box-a">Login/Signup</a>
+                            <% } %>
                     </div>
             </div>
 

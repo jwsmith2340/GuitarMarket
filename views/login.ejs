@@ -8,41 +8,20 @@
 
             <div class="body-box">
 
-                <div id="category-box-login">
-
-                    <div class="dropdown-guitar">
-
-                        <a class="nav-dropdown-a" href="/product_category/guitar">
-                            <h5 class="dropdown-h5">Guitars</h5>
-                        </a>
-                        <div class="dropdown-content-guitar">
-                            <p>Sub1</p>
-                        </div>
-
+                <div id="login-category-box" class="home-category-box">
+                        <div class="category-box-products">
+                            <a class="category-box-a" href="/product_category/guitar">Guitars</a>
+                            <a class="category-box-a" href="/product_category/bass">Basses</a>
+                            <a class="category-box-a" href="/product_category/effects">Effects</a>
+                            </div>
+                            <div class="category-box-login">
+                                <% if(user) { %>
+                                    <a href="/users/logout" class="category-box-a">Logout</a>
+                                <% } else { %>
+                                    <a href="/users/login" class="category-box-a">Login/Signup</a>
+                                    <% } %>
+                            </div>
                     </div>
-
-
-                    <div class="dropdown-bass">
-                        <a class="nav-dropdown-a" href="/product_category/bass">
-                            <h5 class="dropdown-h5">Basses</h5>
-                        </a>
-                        <div class="dropdown-content-bass">
-                            <p>Sub1</p>
-                        </div>
-
-                    </div>
-
-                    <div class="dropdown-effects">
-                        <a class="nav-dropdown-a" href="/product_category/effects">
-                            <h5 class="dropdown-h5">Effects</h5>
-                        </a>
-                        <div class="dropdown-content-bass">
-                            <p>Sub1</p>
-                        </div>
-
-                    </div>
-
-                </div>
 
                 
                 <div class="login-signup-box">

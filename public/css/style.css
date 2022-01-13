@@ -14,6 +14,11 @@
     margin: 0 5px;
 }   
 
+.category-box-products-index {
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
 .category-box-a {
     text-decoration: none;
     color: #002855;
@@ -273,6 +278,16 @@ img {
     height: 30px;
 }
 
+#login-category-box {
+    background: #EAAA00;
+    margin-top: 90px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
 #category-box-login {
     margin-top: 90px;
     background: #EAAA00;
@@ -288,13 +303,18 @@ img {
 }
 
 .home-product-display {
-    height: 150px;
+    height: 100%;
     display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.mob-all-pro-display-box-a {
     width: 90%;
     margin: 7px 0;
-    border-top: 1.7px black solid;
-    border-bottom: 1px black solid;
-    justify-content: space-around;
+    text-decoration: none;
+    color: black;
+    
 }
 
 .product-display-image {
@@ -589,6 +609,7 @@ fieldset > input:focus{
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
+    margin-bottom: 190px;
 } 
 
 .mob-checkout-button {
@@ -617,10 +638,10 @@ fieldset > input:focus{
     color: #d13131;
     background-color: white;
     border: 1px solid #d13131;
-    width: 130px;
+    width: 150px;
     height: 25px;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 13px;
     transition: .3s ease-in-out;
 }
 
@@ -977,7 +998,7 @@ fieldset > input:focus{
         border: 0;
         margin: 20px 0 50px 15%;
         border-top: #002855 solid 2px;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 
     .landing-cat-bar {
@@ -996,7 +1017,7 @@ fieldset > input:focus{
         padding: 5px;
         margin-left: 5px;
         text-decoration: none;
-        color: white;
+        color: #002855;
     }
 
     .landing-cat-bar-products {

@@ -14,7 +14,11 @@
                             <a class="landing-cat-a" href="/product_category/effects">Effects</a>
                             </div>
                             <div class="landing-cat-bar-login">
-                                <a href="/users" class="landing-cat-a">Account</a>
+                                <% if(user) { %>
+                                    <a href="/users/logout" class="category-box-a">Logout</a>
+                                <% } else { %>
+                                    <a href="/users/login" class="category-box-a">Login/Signup</a>
+                                    <% } %>
                             </div>
                     </div>
 
@@ -41,7 +45,7 @@
             <div class="mob-contact">
                 <h1 class="mob-contact-h1">Contact Info</h1>
                 <br>
-                <h4 class="mob-contact-h4">I really hope you're enjoying the page! If you have any questions, comments, or suggestions, please feel free to reach out to me, I'd love to hear from you!</h4>
+                <h4 class="mob-contact-h4">I really hope you're enjoying the page! If you have any questions, comments, or suggestions, please feel free to reach out to me. I'd love to hear from you!</h4>
                 <br>
                 <ul>
                     <li class="mob-contact-li">
