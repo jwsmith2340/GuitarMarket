@@ -15,8 +15,7 @@
 }   
 
 .category-box-products-index {
-    margin-top: 5px;
-    margin-bottom: 3px;
+    margin: 5px;
 }
 
 .category-box-a {
@@ -280,7 +279,7 @@ img {
 
 #login-category-box {
     background: #EAAA00;
-    margin-top: 90px;
+    margin-top: 55px;
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
@@ -746,6 +745,7 @@ fieldset > input:focus{
     .mob-all-pro-display { display: none; }
     .main-show { display: none; }
     .mob-total-checkout { display: none }
+    #login-category-box { display: none }
 
     .body-box {
         display: flex;
@@ -756,6 +756,19 @@ fieldset > input:focus{
         /* background: linear-gradient(0.25turn, #000000, #020202, #8C3C05, #CC790A, #CC790A, #CC790A, #8C3C05, #020202, #000000); */
     }
 
+    .login-signup-box {
+        width: 70%;
+        background-color: white;
+        margin-left: 15%;
+        
+    }
+
+    #login-category-box {
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 40px;
+    }
+
     .dt-mid-three-display-box{
         height: 300px;
         width: 70%;
@@ -764,6 +777,16 @@ fieldset > input:focus{
         justify-content: space-between;
         max-height: 300px;
         overflow: hidden;
+    }
+
+    .body-box-login {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* background-image: url('https://wallpaperaccess.com/full/4160539.jpg'); */
+        background-color: rgba(88, 88, 88, 0.45);
+        /* background: linear-gradient(0.25turn, #000000, #020202, #8C3C05, #CC790A, #CC790A, #CC790A, #8C3C05, #020202, #000000); */
     }
 
     .dt-mid-three-display-left{
@@ -1016,6 +1039,19 @@ fieldset > input:focus{
         margin: 15px 0 50px 15%;
         border-top: #002855 solid 2px;
         justify-content: space-between;
+    }
+
+    .landing-cat-bar-login-box {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        height: 3%;
+        background-color: #EAAA00;
+        border: 0;
+        margin: 80px 0 50px 15%;
+        border-top: #002855 solid 2px;
+        justify-content: space-between;
+        padding: .5px;
     }
 
     .landing-cat-a {

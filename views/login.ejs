@@ -6,7 +6,23 @@
     <body>
         <%- include('../partials/nav.ejs') %>
 
-            <div class="body-box">
+            <div class="body-box-login">
+
+                <div class="landing-cat-bar-login-box">
+                    <div class="landing-cat-bar-products">
+                        <a class="landing-cat-a" href="/product_category/guitar">Guitars</a>
+                        <a class="landing-cat-a" href="/product_category/bass">Basses</a>
+                        <a class="landing-cat-a" href="/product_category/effects">Effects</a>
+                        </div>
+                        <div class="landing-cat-bar-login">
+                                <% if(user) { %>
+                                    <a href="/users/logout" class="category-box-a">Logout</a>
+                                <% } else { %>
+                                    <a href="/users/login" class="category-box-a">Login/Signup</a>
+                                    <% } %>
+                        </div>
+                </div>
+
 
                 <div id="login-category-box" class="home-category-box">
                         <div class="category-box-products">
@@ -56,7 +72,11 @@
                                     <input type="submit" value="SignUp">
                                 </form>
                     </div>
+
+
+
                 </div>
+
                 <footer id="dt-show-footer-fixed">
                     <div class="footer-box">
                         <a class="footer-a" href="/product_category/contact">Contact Us</a>
