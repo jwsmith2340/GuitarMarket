@@ -37,14 +37,14 @@
                                     <% } %>
                             </div>
                     </div>
-
                                  
-
-
-
                     <ul class="mob-all-pro-display">
                         <% products.forEach(pro=> { %>
-                            <a class="mob-all-pro-display-box-a" href="/product_category/<%= pro._id %>">
+                            <% if(user) { %>
+                                <a class="mob-all-pro-display-box-a" href="/product_category/<%= pro._id %>">
+                            <% } else { %>
+                                <a class="mob-all-pro-display-box-a" href="/users/login">
+                                <% } %>
                                 <div class="home-product-display">
                                 <div class="product-display-image">
                                     <span class="home-image-a"><img
