@@ -7,6 +7,7 @@ const cartController = require('./controllers/cart')
 const morgan = require('morgan')
 const expressSession = require('express-session')
 const methodOverride = require('method-override')
+const auth = require('./middleware/auth')
 
 require('dotenv').config()
 
@@ -40,11 +41,12 @@ app.use(function(req, res, next) {
     next()
 })
 // ^^custom middleware that lets us log the session to the console
+app.use(auth.handleLoggedInUser)
 
 //Controller route
 app.use('/product_category', productsController)
 app.use('/users', usersController)
-app.use('/cart', cartController)
+//app.use('/cart', cartController)
 app.get('/', (req, res) => {
     res.render('index.ejs')
 })

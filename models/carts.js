@@ -12,6 +12,10 @@ const cartSchema = new Schema(
         category:{type: String, required: true},
         subC1:   {type: String, required: true},
         description: {type: String},
+        createdBy: {
+            type: Schema.Types.ObjectId,
+            ref: 'User'
+        }
     }
 )
 

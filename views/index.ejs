@@ -6,7 +6,9 @@
         <div class="body-box">
             <div class="main">
                 <%- include('../partials/nav.ejs') %>
-
+                    <% if(user) { %>
+                        <h1>LOGGED IN IDIOT</h1>
+                    <% } %>
                     <div id="landing-welcome-box">
                         <div id="landing-welcome-shade"></div>
                     </div>

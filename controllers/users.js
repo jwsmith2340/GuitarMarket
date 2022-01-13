@@ -1,7 +1,9 @@
+
 const express = require('express')
 const usersRouter = express.Router()
 const User = require('../models/user') 
 const bcrypt = require('bcrypt')
+const auth = require('../middleware/auth')
 
 //login routes
 usersRouter.get('/login', (req, res) => {
@@ -50,7 +52,7 @@ usersRouter.post('/register', (req, res) => {
     // 1.1) Now we create a user
     User.create(req.body, (err, user) => {
     // 2) redirect to login
-        res.redirect('/login')
+        res.redirect('/users/login')
     })
 })
 
@@ -60,5 +62,35 @@ usersRouter.get('/logout', (req, res) => {
     res.redirect('/users/login')
     })
 })
+
+usersRouter.get('/cart', auth.isAuthenticated, (req, res) => {
+    res.render('cart.ejs')
+})
+
+
+usersRouter.delete('/:id/cart', auth.isAuthenticated, (req, res) => {
+    User.findByIdAndDelete(req.params.id, (err, resource) => {
+        res.redirect('/')
+    })
+})
+
+usersRouter.post('/:id/cart', auth.isAuthenticated, (req, res) => {
+    User.findById(req.params.id, (err, user) => {
+        user.cart.push(req.body)
+        user.save(function(err) {
+            res.redirect('/users/cart')
+            //^^this redirect needs fixed 
+        })
+    })
+})
+
+
+
+
+
+
+
+
+
 
 module.exports = usersRouter

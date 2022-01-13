@@ -53,7 +53,7 @@
                         $<%= product.price %>.99
                     </h5>
 
-                    <form action="/cart" method="POST">
+                    <form action="/users/<%= user._id %>/cart" method="POST">
                         <fieldset>
                         <input type="hidden" name="brand" value="<%= product.brand %>">
                         <input type="hidden" name="model" value="<%= product.model %>">
@@ -93,7 +93,7 @@
                     </h2>
                     <h3 class="dt-show-product-info-h3">$<%= product.price %>.99</h3>
 
-                    <form action="/cart" method="POST">
+                    <form action="/users/<%= user._id %>/cart" method="POST">
                         <fieldset>
                         <input type="hidden" name="brand" value="<%= product.brand %>">
                         <input type="hidden" name="model" value="<%= product.model %>">
