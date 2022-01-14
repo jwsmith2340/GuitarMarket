@@ -10,6 +10,13 @@
         GLOBAL ELEMENTS - MOBILE - START
 *******************************************/
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 .main {
     margin-top: 90px;
 }
@@ -60,6 +67,23 @@
 .category-box-a {
     text-decoration: none;
     color: #002855;
+}
+
+#cart-footer {
+    position: fixed;
+    bottom: 0;
+}
+
+#nav-background {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 10%;
+    background-color: #EAAA00;
+    border: 0;
+    position: fixed;
+    top: 0;
+    z-index: 5;
 }
 
 /*******************************************
@@ -407,14 +431,52 @@
         CART PAGE - MOBILE - END
 *******************************************/
 
+/*******************************************
+        LOGIN PAGE - MOBILE - START
+*******************************************/
 
-
-
-  
-
-.category-box-products-index {
-    margin: 5px;
+#login-category-box {
+    background: #EAAA00;
+    margin-top: 55px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
 }
+
+.login-signup-box {
+    height: 77vh;
+}
+
+.login {
+    height:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.login-h5 {
+    width: 70%;
+    margin: 10px 0;
+}
+
+.signup {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+/*******************************************
+        LOGIN PAGE - MOBILE - END
+*******************************************/
+
+/*******************************************
+        CONTACT PAGE - MOBILE - START
+*******************************************/
 
 .mob-contact {
     height: 80vh;
@@ -427,11 +489,15 @@
 }
 
 .mob-contact-h1 {
-margin-top: 120px;
+    margin-top: 120px;
 }
 
-.mob-contact-h1 {
-
+.mob-contact-h4 {
+    text-align: start;
+    text-indent: 10%;
+    padding: 15px;
+    margin: 0 20px;
+    max-width: 350px;
 }
 
 .mob-contact-li {
@@ -450,25 +516,20 @@ margin-top: 120px;
     margin-left: 15px;
 }
 
-.mob-contact-h4 {
-    text-align: start;
-    text-indent: 10%;
-    padding: 15px;
-    margin: 0 20px;
-    max-width: 350px;
+/*******************************************
+        CONTACT PAGE - MOBILE - END
+*******************************************/
+
+
+
+.category-box-products-index {
+    margin: 5px;
 }
 
 .photoeater {
     height: 42px;
     background-color: white;
     width: 100%;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
 }
 
 #show-add-cart:hover {
@@ -481,18 +542,6 @@ margin-top: 120px;
 
 img {
     height: 150px;
-}
-
-#nav-background {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    height: 10%;
-    background-color: #EAAA00;
-    border: 0;
-    position: fixed;
-    top: 0;
-    z-index: 5;
 }
 
 .navbar {
@@ -516,28 +565,6 @@ img {
     font-size: 17px;
 }
 
-
-
-.login-signup-box {
-    height: 77vh;
-}
-
-.login {
-    height:25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 20px;
-}
-
-.signup {
-    height: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 20px;
-}
-
 .login-header {
     background: #002855;
     display: flex;
@@ -554,18 +581,6 @@ img {
     margin: 2px 11px;
 }
 
-
-
-#login-category-box {
-    background: #EAAA00;
-    margin-top: 55px;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 30px;
-}
-
 #category-box-login {
     margin-top: 90px;
     background: #EAAA00;
@@ -574,11 +589,6 @@ img {
     justify-content: flex-start;
     align-items: center;
     height: 30px;
-}
-
-.login-h5 {
-    width: 70%;
-    margin: 10px 0;
 }
 
 #category-box-h5 {
@@ -618,7 +628,6 @@ footer {
 
 .logo-img {
     height: 20px;
-    
 }
 
 #logo-img-div {
@@ -700,10 +709,6 @@ fieldset > input:focus{
     background-color: white;
 }
 
-
-
-
-
 .home-product-display {
     height: 150px;
     display: flex;
@@ -712,11 +717,6 @@ fieldset > input:focus{
     border-top: 1.7px black solid;
     border-bottom: 1px black solid;
     justify-content: space-around;
-}
-
-#cart-footer {
-    position: fixed;
-    bottom: 0;
 }
 
 .mob-cart-trash {
@@ -731,8 +731,6 @@ fieldset > input:focus{
 .mob-category-box-cart {
     color: white;
 }
-
-
 
 #delete_button {
     margin-top: 10px;
@@ -765,8 +763,6 @@ fieldset > input:focus{
 .mob-edit-delete-box {
     margin: 25px 0 20px 5%;
 }
-
-
 
 .dropdown-content-guitar {
     display: none;
@@ -801,9 +797,10 @@ fieldset > input:focus{
 
 
 
+/*******************************************
+            DESKTOP MEDIA QUERY
+*******************************************/
 
-
-/* DESKTOP OPTIMIZATION */
 @media only screen and (min-width: 768px){
 
     .mob-all-pro-display { display: none; }
@@ -812,6 +809,8 @@ fieldset > input:focus{
     #login-category-box { display: none }
     #category-box { display: none; }
     button:hover { cursor: pointer; }
+    #landing-welcome-box { display: none; }
+    .category-main-box { display: none; }
 
 /*******************************************
         GLOBAL ELEMENTS - DESKTOP - START
@@ -871,6 +870,25 @@ footer {
     display: flex;
     flex-direction: column;
     align-content: center;
+}
+
+body {
+    background-image: url('https://wallpaperaccess.com/full/4160539.jpg');
+    background-size: auto;
+    background-repeat: none;
+    background-attachment: fixed;
+}
+
+#nav-background {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    height: 10%;
+    background-color: #EAAA00;
+    border: 0;
+    margin: 0 15%;
+    border-bottom: #002855 solid 2px;
+    position: absolute;
 }
 
 /*******************************************
@@ -1198,208 +1216,168 @@ footer {
     height: 300px;
 }
 
+.dt-product-cart-info {
+    width: 60%;
+    margin-right: 15px;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dt-cart-h4 {
+    text-align: center;
+}
+
+.dt-cart-p {
+    margin-top: 5px;
+    font-size: 34px;
+}
+
+.dt-cart-p-shipping {
+    font-size: 18px;
+    color: #002855;
+}
+
+.dt-cart-delete-form-button {
+    margin-top: 10px;
+    color: #d13131;
+    background-color: white;
+    border: 1px solid #d13131;
+    width: 130px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: .3s ease-in-out;
+}
+
+.dt-cart-delete-form-button:hover {
+    color: white;
+    background-color: #d13131;
+    cursor: pointer;
+}
+
+.dt-total-checkout {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    margin: 10px 10px 0 25px;
+}
+
+.dt-total-checkout-taxtotal {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+#dt-total-checkout-top-h6 {
+    margin-top: 50px;
+}
+
+.dt-total-checkout-h4 {
+    font-size: 15px;
+}
+
+.dt-total-checkout-taxtotal > h6 {
+    font-size: 14px;
+}
+
+.dt-checkout-button {
+    margin: 10px 0 20px;
+    color: #40A251;
+    background-color: white;
+    border: 1px solid #40A251;
+    width: 150px;
+    height: 33px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: .3s ease-in-out;
+}
+
+.dt-checkout-button:hover {
+    color: white;
+    background-color: #40A251;
+}
+
+
+.dt-cart-p-shipping {
+    font-size: 14px;
+    color: #002855;
+}
+
 /*******************************************
         CART PAGE - DESKTOP - END
 *******************************************/
 
+/*******************************************
+        LOGIN PAGE - DESKTOP - START
+*******************************************/
 
-
-
-
-
-    .login-signup-box {
-        width: 70%;
-        background-color: white;
-        margin-left: 15%;
-        
-    }
-
-    #login-category-box {
-        width: 70%;
-        margin-left: 15%;
-        margin-top: 40px;
-    }
-
-    
-
-    .body-box-login {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        /* background-image: url('https://wallpaperaccess.com/full/4160539.jpg'); */
-        background-color: rgba(88, 88, 88, 0.45);
-        /* background: linear-gradient(0.25turn, #000000, #020202, #8C3C05, #CC790A, #CC790A, #CC790A, #8C3C05, #020202, #000000); */
-    }
-
-   
-
-    body {
-        background-image: url('https://wallpaperaccess.com/full/4160539.jpg');
-        background-size: auto;
-        background-repeat: none;
-        background-attachment: fixed;
-    }    
-
-    #nav-background {
-        width: 70%;
-        display: flex;
-        align-items: center;
-        height: 10%;
-        background-color: #EAAA00;
-        border: 0;
-        margin: 0 15%;
-        border-bottom: #002855 solid 2px;
-        position: absolute;
-    }
-
-    #landing-welcome-box {
-        display: none;
-    }
-
-    .category-main-box {
-        display: none;
-    }
-
-    
-
-    
-
-    .navbar {
-        height: 85%;
-    }
-
-    .landing-cat-bar-login-box {
-        width: 70%;
-        display: flex;
-        align-items: center;
-        height: 3%;
-        background-color: #EAAA00;
-        border: 0;
-        margin: 80px 0 50px 15%;
-        border-top: #002855 solid 2px;
-        justify-content: space-between;
-        padding: .5px;
-    }
-
-    
-    
-
-    .mob-contact {
-        height: 80vh;
-        width: 70%;
-        background-color: white;
-        margin-left: 15%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .dt-main-show {
-        margin-top: 90px;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    
-
-    .dt-product-cart-info {
-        width: 60%;
-        margin-right: 15px;
-        padding: 10px;
-        font-size: 18px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .dt-cart-h4 {
-        text-align: center;
-    }
-
-    .dt-cart-p {
-        margin-top: 5px;
-        font-size: 34px;
-    }
-
-    .dt-cart-p-shipping {
-        font-size: 18px;
-        color: #002855;
-    }
-
-    .dt-cart-delete-form-button {
-        margin-top: 10px;
-        color: #d13131;
-        background-color: white;
-        border: 1px solid #d13131;
-        width: 130px;
-        height: 25px;
-        border-radius: 10px;
-        font-size: 14px;
-        transition: .3s ease-in-out;
-    }
-    
-    .dt-cart-delete-form-button:hover {
-        color: white;
-        background-color: #d13131;
-        cursor: pointer;
-    }
-
-    .dt-total-checkout {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        width: 30%;
-        margin: 10px 10px 0 25px;
-    }
-    
-    .dt-total-checkout-taxtotal {
-        text-align: center;
-        margin-bottom: 12px;
-    }
-
-    .dt-cart-p-shipping {
-        font-size: 14px;
-        color: #002855;
-    }
-
-    .dt-checkout-button {
-        margin: 10px 0 20px;
-        color: #40A251;
-        background-color: white;
-        border: 1px solid #40A251;
-        width: 150px;
-        height: 33px;
-        border-radius: 10px;
-        font-size: 14px;
-        transition: .3s ease-in-out;
-    }
-    
-    .dt-checkout-button:hover {
-        color: white;
-        background-color: #40A251;
-    }
-
-    
-
-    .dt-total-checkout-h4 {
-        font-size: 15px;
-    }
-
-    .dt-total-checkout-taxtotal > h6 {
-        font-size: 14px;
-    }
-
-    #dt-total-checkout-top-h6 {
-        margin-top: 50px;
-    }
-    
-
+.body-box-login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(88, 88, 88, 0.45);
 }
+
+.landing-cat-bar-login-box {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    height: 3%;
+    background-color: #EAAA00;
+    border: 0;
+    margin: 80px 0 50px 15%;
+    border-top: #002855 solid 2px;
+    justify-content: space-between;
+    padding: .5px;
+}
+
+#login-category-box {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 40px;
+}
+
+.login-signup-box {
+    width: 70%;
+    background-color: white;
+    margin-left: 15%;
+}
+
+
+/*******************************************
+        LOGIN PAGE - DESKTOP - END
+*******************************************/
+
+/*******************************************
+        CONTACT PAGE - DESKTOP - START
+*******************************************/
+
+.mob-contact {
+    height: 80vh;
+    width: 70%;
+    background-color: white;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+}
+/*******************************************
+        CONTACT PAGE - DESKTOP - END
+*******************************************/
+
+
+
+/*******************************************
+        ADDITIONAL MEDIA QUERIES
+*******************************************/
 
 @media only screen and (min-width: 1020px) {
     .dt-each-pro-box {
