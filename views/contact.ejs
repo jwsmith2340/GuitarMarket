@@ -1,78 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head.ejs') %>
-<body>
-    <body>
-        <div class="body-box">
-            <div class="main">
-                <%- include('../partials/nav.ejs') %>
+<%- include('../partials/head.ejs') %>
 
-                    <div class="landing-cat-bar">
-                        <div class="landing-cat-bar-products">
-                            <a class="landing-cat-a" href="/product_category/guitar">Guitars</a>
-                            <a class="landing-cat-a" href="/product_category/bass">Basses</a>
-                            <!-- <a class="landing-cat-a" href="/product_category/effects">Effects</a> -->
+        <body>
+
+            <div class="body-box">
+
+                <div class="main">
+
+                    <%- include('../partials/nav.ejs') %>
+
+                        <div class="landing-cat-bar">
+                            <div class="landing-cat-bar-products">
+                                <a class="landing-cat-a" href="/product_category/guitar">Guitars</a>
+                                <a class="landing-cat-a" href="/product_category/bass">Basses</a>
+                                <!-- <a class="landing-cat-a" href="/product_category/effects">Effects</a> -->
                             </div>
                             <div class="landing-cat-bar-login">
                                 <% if(user) { %>
                                     <a href="/users/logout" class="category-box-a">Logout</a>
-                                <% } else { %>
-                                    <a href="/users/login" class="category-box-a">Login/Signup</a>
-                                    <% } %>
+                                    <% } else { %>
+                                        <a href="/users/login" class="category-box-a">Login/Signup</a>
+                                        <% } %>
                             </div>
-                    </div>
+                        </div>
 
-                    <div id="category-box" class="home-category-box">
-                        <div class="category-box-products">
-                            <a class="category-box-a" href="/product_category/guitar">Guitars</a>
-                            <a class="category-box-a" href="/product_category/bass">Basses</a>
-                            <!-- <a class="category-box-a" href="/product_category/effects">Effects</a> -->
+                        <div id="category-box" class="home-category-box">
+                            <div class="category-box-products">
+                                <a class="category-box-a" href="/product_category/guitar">Guitars</a>
+                                <a class="category-box-a" href="/product_category/bass">Basses</a>
+                                <!-- <a class="category-box-a" href="/product_category/effects">Effects</a> -->
                             </div>
                             <div class="category-box-login">
                                 <% if(user) { %>
                                     <a href="/users/logout" class="category-box-a">Logout</a>
-                                <% } else { %>
-                                    <a href="/users/login" class="category-box-a">Login/Signup</a>
-                                    <% } %>
+                                    <% } else { %>
+                                        <a href="/users/login" class="category-box-a">Login/Signup</a>
+                                        <% } %>
                             </div>
-                    </div>                                
-                    <ul class="mob-all-pro-display">                                                           
-                    </ul>
-                    <div class="dt-all-pro-display-wrap">                
-                    </div>
-            </div>
+                        </div>
 
-            <div class="mob-contact">
-                <h1 class="mob-contact-h1">Contact Info</h1>
-                <br>
-                <h4 class="mob-contact-h4">I really hope you're enjoying the page! If you have any questions, comments, or suggestions, please feel free to reach out to me. I'd love to hear from you!</h4>
-                <br>
-                <ul>
-                    <li class="mob-contact-li">
-                        <a class="mob-contact-github" href="https://github.com/jwsmith2340" target="_blank">
-                            <div class="i"><i class="fa fa-github-square"></i></div><div class="gitp"><p>GitHub</p></div></a></li>
+                        <ul class="mob-all-pro-display">
+                        </ul>
 
-                    <li class="mob-contact-li">
-                        <a class="mob-contact-github" href="https://www.linkedin.com/in/jwsmith2340/" target="_blank">
-                            <div class="i"><i class="fa fa-linkedin-square"></i></div><div class="gitp"><p>LinkedIn</p></div></a></li>
-                </ul>
-                
-            </div>
+                        <div class="dt-all-pro-display-wrap">
+                        </div>
 
-            <footer>
-                <div class="footer-box">
-                    <a class="footer-a" href="/product_category/contact">Contact
-                        Us</a>
-                    <span id="copyright">&#169 James Smith</span>
-                    <span style="font-size: 2.2em; color: white;">
-                        <a class="footer-a" href="https://github.com/jwsmith2340" target="_blank"><i
-                                class="fa fa-github-square"></i></a>
-                        <a class="footer-a" href="https://www.linkedin.com/in/jwsmith2340/" target="_blank"><i
-                                class="fa fa-linkedin-square"></i></a>
-                    </span>
                 </div>
-            </footer>
-        </div>
-    </body>
-</body>
+
+                <div class="mob-contact">
+                    <h1 class="mob-contact-h1">Contact Info</h1>
+                    <br>
+                    <h4 class="mob-contact-h4">I really hope you're enjoying the page! If you have any questions,
+                        comments, or suggestions, please feel free to reach out to me. I'd love to hear from you!</h4>
+                    <br>
+
+                    <ul>
+                        <li class="mob-contact-li">
+                            <a class="mob-contact-github" href="https://github.com/jwsmith2340" target="_blank">
+                                <div class="i"><i class="fa fa-github-square"></i></div>
+                                <div class="gitp">
+                                    <p>GitHub</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mob-contact-li">
+                            <a class="mob-contact-github" href="https://www.linkedin.com/in/jwsmith2340/"
+                                target="_blank">
+                                <div class="i"><i class="fa fa-linkedin-square"></i></div>
+                                <div class="gitp">
+                                    <p>LinkedIn</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <footer>
+
+                    <div class="footer-box">
+
+                        <a class="footer-a" href="/product_category/contact">Contact
+                            Us</a>
+                        <span id="copyright">&#169 James Smith</span>
+                        <span style="font-size: 2.2em; color: white;">
+                            <a class="footer-a" href="https://github.com/jwsmith2340" target="_blank"><i
+                                    class="fa fa-github-square"></i></a>
+                            <a class="footer-a" href="https://www.linkedin.com/in/jwsmith2340/" target="_blank"><i
+                                    class="fa fa-linkedin-square"></i></a>
+                        </span>
+                        
+                    </div>
+
+                </footer>
+            </div>
+        </body>
+
 </html>

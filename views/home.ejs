@@ -4,113 +4,132 @@
 <%- include('../partials/head.ejs') %>
 
     <body>
+
         <div class="body-box">
+
             <div class="main">
+
                 <%- include('../partials/nav.ejs') %>
 
                     <div class="landing-cat-bar">
+
                         <div class="landing-cat-bar-products">
                             <a class="landing-cat-a" href="/product_category/guitar">Guitars</a>
                             <a class="landing-cat-a" href="/product_category/bass">Basses</a>
                             <!-- <a class="landing-cat-a" href="/product_category/effects">Effects</a> -->
-                            </div>
-                            <div class="landing-cat-bar-login">
-                                <% if(user) { %>
-                                    <a href="/users/logout" class="category-box-a">Logout</a>
+                        </div>
+
+                        <div class="landing-cat-bar-login">
+                            <% if(user) { %>
+                                <a href="/users/logout" class="category-box-a">Logout</a>
                                 <% } else { %>
                                     <a href="/users/login" class="category-box-a">Login/Signup</a>
                                     <% } %>
-                            </div>
+                        </div>
+
                     </div>
 
                     <div id="category-box" class="home-category-box">
+
                         <div class="category-box-products">
+
                             <a class="category-box-a" href="/product_category/guitar">Guitars</a>
                             <a class="category-box-a" href="/product_category/bass">Basses</a>
                             <!-- <a class="category-box-a" href="/product_category/effects">Effects</a> -->
-                            </div>
-                            <div class="category-box-login">
-                                <% if(user) { %>
-                                    <a href="/users/logout" class="category-box-a">Logout</a>
+
+                        </div>
+
+                        <div class="category-box-login">
+                            <% if(user) { %>
+                                <a href="/users/logout" class="category-box-a">Logout</a>
                                 <% } else { %>
                                     <a href="/users/login" class="category-box-a">Login/Signup</a>
                                     <% } %>
-                            </div>
+                        </div>
+
                     </div>
-                                 
+
                     <ul class="mob-all-pro-display">
                         <% products.forEach(pro=> { %>
                             <% if(user) { %>
                                 <a class="mob-all-pro-display-box-a" href="/product_category/<%= pro._id %>">
-                            <% } else { %>
-                                <a class="mob-all-pro-display-box-a" href="/users/login">
-                                <% } %>
-                                <div class="home-product-display">
-                                <div class="product-display-image">
-                                    <span class="home-image-a"><img
-                                            src="<%= pro.image %>" class="display-image"></span>
-                                </div>
-                                <div class="product-display-info">
-                                    <p><span class="home-image-a">
-                                            <%= pro.brand %>
-                                                <%= pro.model %>
-                                    </span><br>
-                                        <%= pro.color %><br>
-                                            $<%= pro.price %>.99<br>
-                                    </p>
-                                </div>
-                            </div>
-                            </a>
-                            <% }) %>
-
+                                    <% } else { %>
+                                        <a class="mob-all-pro-display-box-a" href="/users/login">
+                                            <% } %>
+                                                <div class="home-product-display">
+                                                    <div class="product-display-image">
+                                                        <span class="home-image-a"><img src="<%= pro.image %>"
+                                                                class="display-image"></span>
+                                                    </div>
+                                                    <div class="product-display-info">
+                                                        <p><span class="home-image-a">
+                                                                <%= pro.brand %>
+                                                                    <%= pro.model %>
+                                                            </span><br>
+                                                            <%= pro.color %><br>
+                                                                $<%= pro.price %>.99<br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                        </a>
+                                    <% }) %>
                     </ul>
 
                     <div class="dt-all-pro-display-wrap">
-                            <% products.forEach(pro=> { %>
-                                <% if(user) { %>
-                                    <a href="/product_category/<%= pro._id %>">
-                                <% } else { %>
-                                    <a href="/users/login">
-                                    <% } %>
-                        
-                                
-                                    <div class="dt-each-pro-box">
-                                    
-                                        <div class="dt-each-pro-contents-img">
-                                        <img class="dt-display-image" src="<%= pro.image %>">
-                                        </div>
-                                        <div class="dt-each-pro-contents-p">
-                                        <p class="dt-each-pro-contents-p"><a class="dt-home-name-a" href="/product_category/<%= pro._id %>">
-                                            <%= pro.brand %>
-                                                <%= pro.model %>
-                                        </a><br>
-                                            $<%= pro.price %>.99<br>
-                                    </p>
-                                   
-                                    
-                                    </div>
-                                </div></a>
-                            <% }) %> 
+                        <% products.forEach(pro=> { %>
+                            <% if(user) { %>
+                                <a href="/product_category/<%= pro._id %>">
+                                    <% } else { %>
+                                        <a href="/users/login">
+                                            <% } %>
+
+
+                                                <div class="dt-each-pro-box">
+
+                                                    <div class="dt-each-pro-contents-img">
+                                                        <img class="dt-display-image" src="<%= pro.image %>">
+                                                    </div>
+
+                                                    <div class="dt-each-pro-contents-p">
+                                                        <p class="dt-each-pro-contents-p"><a class="dt-home-name-a"
+                                                                href="/product_category/<%= pro._id %>">
+                                                                <%= pro.brand %>
+                                                                    <%= pro.model %>
+                                                            </a><br>
+                                                            $<%= pro.price %>.99<br>
+                                                        </p>
+                                                    </div>
+                                                    
+                                                </div>
+
+                                        </a>
+                                <% }) %>
                     </div>
-
-
 
             </div>
 
             <footer>
+
                 <div class="footer-box">
+
                     <a class="footer-a" href="/product_category/contact">Contact
                         Us</a>
+
                     <span id="copyright">&#169 James Smith</span>
+
                     <span style="font-size: 2.2em; color: white;">
                         <a class="footer-a" href="https://github.com/jwsmith2340" target="_blank"><i
                                 class="fa fa-github-square"></i></a>
                         <a class="footer-a" href="https://www.linkedin.com/in/jwsmith2340/" target="_blank"><i
                                 class="fa fa-linkedin-square"></i></a>
                     </span>
+
                 </div>
+
             </footer>
+
         </div>
+        
     </body>
 
 </html>
