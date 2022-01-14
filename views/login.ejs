@@ -9,41 +9,51 @@
             <div class="body-box-login">
 
                 <div class="landing-cat-bar-login-box">
+
                     <div class="landing-cat-bar-products">
                         <a class="landing-cat-a" href="/product_category/guitar">Guitars</a>
                         <a class="landing-cat-a" href="/product_category/bass">Basses</a>
                         <!-- <a class="landing-cat-a" href="/product_category/effects">Effects</a> -->
-                        </div>
-                        <div class="landing-cat-bar-login">
-                                <% if(user) { %>
-                                    <a href="/users/logout" class="category-box-a">Logout</a>
-                                <% } else { %>
-                                    <a href="/users/login" class="category-box-a">Login/Signup</a>
-                                    <% } %>
-                        </div>
+                    </div>
+
+                    <div class="landing-cat-bar-login">
+                        <% if(user) { %>
+                            <a href="/users/logout" class="category-box-a">Logout</a>
+                            <% } else { %>
+                                <a href="/users/login" class="category-box-a">Login/Signup</a>
+                                <% } %>
+                    </div>
+
                 </div>
 
 
                 <div id="login-category-box" class="home-category-box">
-                        <div class="category-box-products">
-                            <a class="category-box-a" href="/product_category/guitar">Guitars</a>
-                            <a class="category-box-a" href="/product_category/bass">Basses</a>
-                            <!-- <a class="category-box-a" href="/product_category/effects">Effects</a> -->
-                            </div>
-                            <div class="category-box-login">
-                                <% if(user) { %>
-                                    <a href="/users/logout" class="category-box-a">Logout</a>
-                                <% } else { %>
-                                    <a href="/users/login" class="category-box-a">Login/Signup</a>
-                                    <% } %>
-                            </div>
+
+                    <div class="category-box-products">
+
+                        <a class="category-box-a" href="/product_category/guitar">Guitars</a>
+                        <a class="category-box-a" href="/product_category/bass">Basses</a>
+                        <!-- <a class="category-box-a" href="/product_category/effects">Effects</a> -->
+
                     </div>
 
-                
+                    <div class="category-box-login">
+                        <% if(user) { %>
+                            <a href="/users/logout" class="category-box-a">Logout</a>
+                            <% } else { %>
+                                <a href="/users/login" class="category-box-a">Login/Signup</a>
+                                <% } %>
+                    </div>
+
+                </div>
+
+
                 <div class="login-signup-box">
+
                     <div class="login">
                         <h3>Login</h3>
-                        <h5 class="login-h5">(If you do not want to sign up, you can login with test@test.com, 1234)</h5>
+                        <h5 class="login-h5">(If you do not want to sign up, you can login with test@test.com, 1234)
+                        </h5>
                         <% if(error) { %>
                             <p style="color: red">
                                 <%= error %>
@@ -56,8 +66,9 @@
                                     <input type="submit" value="Login">
                                 </form>
                     </div>
+
                     <hr>
-                   
+
                     <div class="signup">
                         <h3>Sign Up</h3>
                         <h5 class="login-h5">(You do not have to use a real email if you don't want to)</h5>
@@ -73,23 +84,29 @@
                                 </form>
                     </div>
 
-
-
                 </div>
 
                 <footer id="dt-show-footer-fixed">
+
                     <div class="footer-box">
+                        
                         <a class="footer-a" href="/product_category/contact">Contact Us</a>
+
                         <span id="copyright">&#169 James Smith</span>
+
                         <span style="font-size: 2.2em; color: white;">
                             <a class="footer-a" href="https://github.com/jwsmith2340" target="_blank"><i
                                     class="fa fa-github-square"></i></a>
                             <a class="footer-a" href="https://www.linkedin.com/in/jwsmith2340/" target="_blank"><i
                                     class="fa fa-linkedin-square"></i></a>
                         </span>
+
                     </div>
+
                 </footer>
+
             </div>
+            
     </body>
 
 </html>

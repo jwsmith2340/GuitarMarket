@@ -3,27 +3,35 @@
 <%- include('../partials/head.ejs') %>
 
     <body>
-        <div class="body-box">
-            <div class="main">
-                <%- include('../partials/nav.ejs') %>
-                <div id="category-box" class="home-category-box">
 
-                    <div class="category-box-products-index">
-                        <a class="category-box-a" href="/product_category/guitar">Guitars</a>
-                        <a class="category-box-a" href="/product_category/bass">Basses</a>
-                        <!-- <a class="category-box-a" href="/product_category/effects">Effects</a> -->
+        <div class="body-box">
+
+            <div class="main">
+
+                <%- include('../partials/nav.ejs') %>
+
+                    <div id="category-box" class="home-category-box">
+
+                        <div class="category-box-products-index">
+                            <a class="category-box-a" href="/product_category/guitar">Guitars</a>
+                            <a class="category-box-a" href="/product_category/bass">Basses</a>
+                            <!-- <a class="category-box-a" href="/product_category/effects">Effects</a> -->
                         </div>
+
                         <div class="category-box-login">
                             <% if(user) { %>
                                 <a href="/users/logout" class="category-box-a">Logout</a>
-                            <% } else { %>
-                                <a href="/users/login" class="category-box-a">Login/Signup</a>
-                                <% } %>
+                                <% } else { %>
+                                    <a href="/users/login" class="category-box-a">Login/Signup</a>
+                                    <% } %>
                         </div>
-                </div>
+
+                    </div>
 
                     <div id="landing-welcome-box">
+
                         <div id="landing-welcome-shade"></div>
+
                     </div>
 
                     <div class="category-main-box">
@@ -60,57 +68,71 @@
                     </div>
 
                     <div class="landing-cat-bar">
+
                         <div class="landing-cat-bar-products">
                             <a class="landing-cat-a" href="/product_category/guitar">Guitars</a>
                             <a class="landing-cat-a" href="/product_category/bass">Basses</a>
                             <!-- <a class="landing-cat-a" href="/product_category/effects">Effects</a> -->
-                            </div>
-                            <div class="landing-cat-bar-login">
-                                    <% if(user) { %>
-                                        <a href="/users/logout" class="category-box-a">Logout</a>
-                                    <% } else { %>
-                                        <a href="/users/login" class="category-box-a">Login/Signup</a>
-                                        <% } %>
-                            </div>
+                        </div>
+
+                        <div class="landing-cat-bar-login">
+                            <% if(user) { %>
+                                <a href="/users/logout" class="category-box-a">Logout</a>
+                                <% } else { %>
+                                    <a href="/users/login" class="category-box-a">Login/Signup</a>
+                                    <% } %>
+                        </div>
+
                     </div>
 
                     <div class="dt-top-display-box">
+
                         <div class="dt-top-display-banner">
                             <h2 class="dt-top-display-h2">
                                 Premium Guitar Selection
                             </h2>
                             <a href="/product_category/guitar"><button class="dt-top-display-a">Learn More</button></a>
                         </div>
+
                     </div>
 
                     <div class="dt-mid-three-display-box">
 
                         <div class="dt-mid-three-display-left">
+
                             <div class="dt-mid-three-category">
                                 <h4>Featured Partner Article</h4>
                             </div>
+
                             <div class="dt-mid-three-title"><a
                                     href="https://www.ultimate-guitar.com/news/general_music_news/slash_says_new_gnr_album_is_in_the_works_describes_how_axl_rose_changed_during_their_time_apart.html"
                                     target="_blank">Slash says new GNR Album Is in the Works</a></div>
                             <div class="dt-mid-three-banner-left"></div>
+
                         </div>
 
                         <div class="dt-mid-three-display-middle">
+
                             <div class="dt-mid-three-category">
                                 <h4>Featured Product Video</h4>
                             </div>
+
                             <div class="dt-mid-three-title"><a href="https://www.youtube.com/watch?v=aDuedEe2vPM"
                                     target="_blank">Gibson Les Paul Standard 50's</a></div>
                             <div class="dt-mid-three-banner-middle"></div>
+
                         </div>
 
                         <div class="dt-mid-three-display-right">
+
                             <div class="dt-mid-three-category">
                                 <h4>Product Spotlight</h4>
                             </div>
+
                             <div class="dt-mid-three-title"><a href="/product_category/guitar">View
                                     Our Wide Selection of Quality Guitars</a></div>
                             <div class="dt-mid-three-banner-right"></div>
+
                         </div>
 
                     </div>
@@ -118,19 +140,27 @@
             </div>
 
             <footer>
+
                 <div class="footer-box">
+
                     <a class="footer-a" href="/product_category/contact">Contact
                         Us</a>
+
                     <span id="copyright">&#169 James Smith</span>
+
                     <span style="font-size: 2.2em; color: white;">
                         <a class="footer-a" href="https://github.com/jwsmith2340" target="_blank"><i
                                 class="fa fa-github-square"></i></a>
                         <a class="footer-a" href="https://www.linkedin.com/in/jwsmith2340/" target="_blank"><i
                                 class="fa fa-linkedin-square"></i></a>
                     </span>
+
                 </div>
+
             </footer>
+
         </div>
+        
     </body>
 
 </html>

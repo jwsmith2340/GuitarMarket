@@ -1,29 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap" rel="stylesheet">
-    <title>Document</title>
-</head>
+<%- include('../partials/head.ejs')>
 
-<body>
-    <%- include('../partials/nav.ejs') %>
-        <%- include('../partials/header.ejs') %>
-            <h3>Signup</h3>
+    <body>
 
-            <form action="/users/register" method="post">
-                <input type="email" name="email"><br>
-                <input type="password" name="password"><br>
-                <input type="submit" value="SignUp">
-            </form>
+        <%- include('../partials/nav.ejs') %>
 
-</body>
+            <%- include('../partials/header.ejs') %>
+
+                <h3>Signup</h3>
+
+                <form action="/users/register" method="post">
+                    <input type="email" name="email"><br>
+                    <input type="password" name="password"><br>
+                    <input type="submit" value="SignUp">
+                </form>
+
+    </body>
 
 </html>
