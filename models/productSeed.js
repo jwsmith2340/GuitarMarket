@@ -1,3 +1,5 @@
+//This seed is how the initial product catalog was produced
+
 module.exports = [
     {
         brand: 'Gibson',
