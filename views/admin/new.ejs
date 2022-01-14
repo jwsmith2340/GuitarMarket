@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap" rel="stylesheet">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <meta name="description" content="Mountaineer Music" />
+        <meta name="title" property="og:title" content="Mountaineer Music" />
+        <meta property="og:type" content="website" />
+        <meta name="image" property="og:image" content="https://guitar.com/wp-content/uploads/2019/05/Gibson-Custom-60th-Anniversary-1959-Les-Paul-Standard-badge@1400x1050.jpg" />
+        <meta name="description" property="og:description" content="Mountaineer Music" />
+        <meta name="author" content="James Smith" />
+        <!-- ^^This block is used to display thumbnail images on social media -->
+    
+        <link rel="stylesheet" href="/css/style.css">
+        <!-- ^^Brining in the CSS file -->
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- ^^This brings in the home, shopping cart, in, and GitHub icons -->
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap" rel="stylesheet">
+        <!-- ^^This block brings in Google Fonts Vujahday and Archivo -->
+    
+        <title>Mountaineer Music</title>
+    </head>
 
 <body>
+    
     <div id="nav-background">
         <div class="navbar">
-            <a href="/">Home</a>
-            <div id="logo_div">
+            
+            <div style="font-size: 20px; color: white;">
+                <a href="/"><i id="nav-hamburger-menu" class="fa fa-home" style="font-size: 28px"></i></a>
+            </div>
+            <!-- ^^This is the home icon on the left side of the nav bar. This will be transitioned to a hamburger menu with a modal. -->
+    
+            <a href="/" id="logo_div">
                 <div class="nav-logo-box">
                     <h3 class="nav-logo">Mountaineer</h3>
-                    <div>
-                        <h3 class="nav-logo">Music</h3>
-                    </div>
+                    <div><h3 class="nav-logo">Music</h3></div>
                 </div>
-            </div>
-            <a href="/cart">Cart</a>
+            </a>
+            <!-- ^^This is the 'Mountaineer Music' logo/ link to home in the center of the navbar -->
+    
+            <span style="font-size: 20px; color: white;">
+                <a href="/users/cart">
+                    <i class="fa fa-shopping-cart" style="font-size: 28px"></i></a>
+                        </span>
+            <!-- ^^This is the shopping cart icon/link on the right side of the nav bar -->
         </div>
     </div>
 
-    <div class="main">
+    <div class="main-new-box">
+
         <h2 id="new-title">Add Product</h2>
         <form class="new_form" action="/product_category" method="POST">
             <fieldset>

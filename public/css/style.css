@@ -796,7 +796,6 @@ fieldset > input:focus{
 }
 
 
-
 /*******************************************
             DESKTOP MEDIA QUERY
 *******************************************/
@@ -955,7 +954,6 @@ body {
 .dt-mid-three-display-left{
     width: 30%;
     max-height: 100%;
-    background-color: blue;
     display: flex;
     flex-direction: column;
 }
@@ -994,7 +992,6 @@ body {
 .dt-mid-three-display-middle{
     width: 30%;
     max-height: 100%;
-    background-color: yellow;
     display: flex;
     flex-direction: column;
 }
@@ -1010,7 +1007,6 @@ body {
 .dt-mid-three-display-right{
     width: 30%;
     max-height: 100%;
-    background-color: red;
     display: flex;
     flex-direction: column;
 }
@@ -1371,6 +1367,20 @@ body {
 }
 /*******************************************
         CONTACT PAGE - DESKTOP - END
+*******************************************/
+
+/*******************************************
+        NEW PAGE - DESKTOP - START
+*******************************************/
+
+.main-new-box {
+    background-color: white;
+    width: 70%;
+    margin-left: 15%;
+}
+
+/*******************************************
+        NEW PAGE - DESKTOP - END
 *******************************************/
 
 

@@ -115,11 +115,11 @@ productsRouter.put('/:id', (req, res) => {
         //^^Next, it is going to modify the req.body
         { new: true },
         //^^It is going to show the new version. This is important to include, 
-        //^^else it will show the old version, confusing
+        //^^or else it will show the old version, confusing
         (error, updatedProduct) => {
         //^^We could display updatedProduct in case we want to give users a last chance to revert back.
         //^^That is not what we are doing in this case, so it is not used here. 
-            res.redirect(`/${req.params.id}`)
+            res.redirect(`/product_category/${req.params.id}`)
             //^^Redirecting to /product_category/ID
     })
 })
