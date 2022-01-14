@@ -197,6 +197,12 @@
 
 .category-main-box-spaceeater {
     height: 53px;
+    background-color: white;
+}
+
+.spaceeater {
+    height: 85px;
+    background-color: white;
 }
 
 /*******************************************
@@ -524,12 +530,6 @@
 
 .category-box-products-index {
     margin: 5px;
-}
-
-.photoeater {
-    height: 42px;
-    background-color: white;
-    width: 100%;
 }
 
 #show-add-cart:hover {

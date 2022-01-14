@@ -1,13 +1,17 @@
-
+//Dependencies
 const express = require('express')
 const usersRouter = express.Router()
 const User = require('../models/user') 
 const bcrypt = require('bcrypt')
 const auth = require('../middleware/auth')
 
-//login routes
+//##########################
+    //LOGIN ROUTES
+//##########################
 usersRouter.get('/login', (req, res) => {
+    //^^The route is /users/login
     res.render('login.ejs', {error: ''})
+    //^^That route renders the login.ejs page
 })
 
 usersRouter.post('/login', (req, res) => {//this is where we are checking the username
@@ -31,7 +35,6 @@ usersRouter.post('/login', (req, res) => {//this is where we are checking the us
        if (!isMatched) return res.render('login.ejs', {error: 'Invalid credentials'})
        //perform password validation
 
-
        req.session.user = user._id
        //we store the user information this way because it is the minimal
        //amount we need, it protects the users. This creates the session, this
@@ -41,11 +44,16 @@ usersRouter.post('/login', (req, res) => {//this is where we are checking the us
    })
 })
 
-//sign up routes
+//##########################
+    //REGISTER ROUTES
+//##########################
 usersRouter.get('/register', (req, res) => {
+    //^^route is /users/register page
     res.render('register.ejs')
+    //^^renders the register.ejs page
 })
 
+//Password Encryption
 usersRouter.post('/register', (req, res) => {
     // 1) encrypt their plain text password with Bcrypt
     req.body.password = bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(12))//hashSync just runs a synchronous version of bcrypt
@@ -56,44 +64,70 @@ usersRouter.post('/register', (req, res) => {
     })
 })
 
-//logout routes
+//##########################
+    //LOGOUT ROUTES
+//##########################
 usersRouter.get('/logout', (req, res) => {
+    //^^Gets /users/logout
     req.session.destroy(function() {
+    //^^Calls the session cookie and destroys it, effectively logging out
     res.redirect('/users/login')
+    //^^Then redirects the user to the login page
     })
 })
 
+//##########################
+    //CART ROUTES
+//##########################
+//Index Route
 usersRouter.get('/cart', auth.isAuthenticated, (req, res) => {
+    //^^Gets the shopping cart but requires the user is authenticated
     res.render('cart.ejs')
+    //^^Renders teh cart.ejs page
 })
 
+//New Route
+//^^Nothing here
 
+//Delete Route
 usersRouter.delete('/:id/cart', auth.isAuthenticated, (req, res) => {
+    //^^Using usersRouter to delete the same path as our post route /users/ID/cart, requires authentication
     User.findById(req.user._id, (err, user) => {
+    //^^Finds the user by id, but does not findByIdAndDelete, this would delete our user at this point
+    //^^Instead, we find the user by id using req.user._id, the Mongo ID and assign it to user
         user.cart.pull(req.params.id)
+        //^^We now access the user's cart via it's embedded relationship in the /models/user.js file.
+        //^^The cart is stored as objects in an array within the user schema, this is how we pull the 
+        //^^req.body.id, the individual item we are trying to delete. Once it is pulled, the delete route
+        //^^deletes it
         user.save((err) => {
+        //^^We now save the user in it's current state. This will save the current version of the cart array
             res.redirect('/users/cart')
+            //^^The user is now redirected to their shopping cart. 
         })
     })
 })
 
+//Update Route
+//^^Nothing Here
+
+//Create Route
 usersRouter.post('/:id/cart', auth.isAuthenticated, (req, res) => {
+    //^^We are posting to /users/ID/cart via the add to cart button on the show page
+    //^^This requires that the user be authenticated
     User.findById(req.params.id, (err, user) => {
+    //^^We are finding the user by their req.body param of id and passing it down as user
         user.cart.push(req.body)
+        //^^The user's cart, an array, is now pushing the req.body of whatever we're posting
+        //^^In this case, we are pushing an item into the cart, which has an embedded relationship
+        //^^with the user schema. This effectively attaches that product to the user.
         user.save(function(err) {
+        //^^This saves the user in its current state, with the newly added products in the cart array
             res.redirect('/users/cart')
-            //^^this redirect needs fixed 
+            //^^This now redirects to users/cart which renders the cart.ejs page
         })
     })
 })
-
-
-
-
-
-
-
-
-
 
 module.exports = usersRouter
+//^^Exports the usersRouter
