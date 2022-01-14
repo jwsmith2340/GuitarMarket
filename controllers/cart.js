@@ -1,3 +1,6 @@
+//##########################################################################
+//THIS SECTION IS ON ICE, APP STILL UNDER DEVELOPMENT, MAY BE UTILIZED LATER
+//##########################################################################
 
 // const express = require('express')
 // const cartRouter = express.Router()
@@ -45,25 +48,5 @@
 //         })
 //     })
 // })
-
-// module.exports = cartRouter
-
-
-
-
-
-// const express = require('express')
-// const cartRouter = express.Router()
-// const Cart = require('../models/carts')
-
-// const express = require('express')
-// const cartRouter = express.Router()
-// const User = require('../models/user')
-
-// cartRouter.get('/cart/:id', (req, res) => {
-//     User.
-// })
-
-
 
 // module.exports = cartRouter
